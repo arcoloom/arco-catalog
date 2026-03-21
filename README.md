@@ -1,3 +1,1 @@
-# arco-catalog
-
-Fetch the public AWS EC2 pricing catalog and normalize it into JSON with instance hardware attributes.
+This is the AWS EC2 catalog scraper used by Arcoloom.
