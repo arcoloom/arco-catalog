@@ -60,6 +60,14 @@ METADATA_FIELDS = [
     "uses_numa_architecture",
 ]
 
+CATEGORICAL_NETWORK_PERFORMANCE = {
+    "Very Low": "Very Low",
+    "Low": "Low",
+    "Low to Moderate": "Low to Moderate",
+    "Moderate": "Moderate",
+    "High": "High",
+}
+
 
 def extract_series(instance_type: str) -> str | None:
     match = re.match(r"^([a-z]+\d+[a-z]*)", instance_type.strip().lower())
@@ -148,6 +156,9 @@ def normalize_network_performance(raw_value: Any) -> Any:
     value = str(raw_value).strip()
     if not value:
         return None
+
+    if value in CATEGORICAL_NETWORK_PERFORMANCE:
+        return CATEGORICAL_NETWORK_PERFORMANCE[value]
 
     up_to_match = re.fullmatch(r"Up to (\d+(?:\.\d+)?) Gigabit", value)
     if up_to_match:
