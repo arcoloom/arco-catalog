@@ -12,100 +12,6 @@ from typing import Any
 DEFAULT_INPUT = Path.cwd() / "downloads" / "instances.json"
 DEFAULT_OUTPUT_DIR = Path.cwd() / "data" / "aws"
 
-TARGET_SERIES = [
-    "c6a",
-    "c6g",
-    "c6gd",
-    "c6gn",
-    "c6i",
-    "c6id",
-    "c6in",
-    "c7a",
-    "c7g",
-    "c7gd",
-    "c7gn",
-    "c7i",
-    "c8a",
-    "c8g",
-    "c8gb",
-    "c8gd",
-    "c8gn",
-    "c8i",
-    "c8id",
-    "m5",
-    "m5a",
-    "m5ad",
-    "m5d",
-    "m5dn",
-    "m5n",
-    "m5zn",
-    "m6a",
-    "m6g",
-    "m6gd",
-    "m6i",
-    "m6id",
-    "m6idn",
-    "m6in",
-    "m7a",
-    "m7g",
-    "m7gd",
-    "m7i",
-    "m8a",
-    "m8azn",
-    "m8g",
-    "m8gb",
-    "m8gd",
-    "m8gn",
-    "m8i",
-    "m8id",
-    "r5",
-    "r5a",
-    "r5ad",
-    "r5b",
-    "r5d",
-    "r5dn",
-    "r5n",
-    "r6a",
-    "r6g",
-    "r6gd",
-    "r6i",
-    "r6id",
-    "r6idn",
-    "r6in",
-    "r7a",
-    "r7g",
-    "r7gd",
-    "r7i",
-    "r7iz",
-    "r8a",
-    "r8g",
-    "r8gb",
-    "r8gd",
-    "r8gn",
-    "r8i",
-    "r8id",
-    "x8g",
-    "x8i",
-    "g4dn",
-    "g5",
-    "g5g",
-    "g6",
-    "g6e",
-    "g6f",
-    "g7e",
-    "p4d",
-    "p4de",
-    "p5",
-    "p5e",
-    "p5en",
-    "p6",
-    "p6e",
-    "inf2",
-    "trn1",
-    "trn1n",
-    "trn2",
-]
-
 METADATA_FIELDS = [
     "series",
     "instance_type",
@@ -181,29 +87,22 @@ def load_instances(input_path: Path) -> list[dict[str, Any]]:
     return [item for item in payload if isinstance(item, dict)]
 
 
-def normalize_target_series(series: list[str] | None) -> set[str]:
-    values = series or TARGET_SERIES
-    return {item.strip().lower() for item in values if item and item.strip()}
-
-
-def filter_instances_by_series(
-    instances: list[dict[str, Any]], target_series: set[str]
-) -> list[dict[str, Any]]:
-    filtered: list[dict[str, Any]] = []
+def enrich_instances_with_series(instances: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    enriched_instances: list[dict[str, Any]] = []
     for item in instances:
         instance_type = str(item.get("instance_type", "")).strip()
         if not instance_type:
             continue
 
         series = extract_series(instance_type)
-        if series not in target_series:
+        if not series:
             continue
 
         enriched = dict(item)
         enriched["series"] = series
-        filtered.append(enriched)
+        enriched_instances.append(enriched)
 
-    return sorted(filtered, key=lambda item: item["instance_type"])
+    return sorted(enriched_instances, key=lambda item: item["instance_type"])
 
 
 def build_series_models(instances: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -328,7 +227,7 @@ def write_json(output_path: Path, payload: Any) -> None:
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description=(
-            "Clean AWS EC2 instance catalog data for selected series and output "
+            "Clean AWS EC2 instance catalog data and output "
             "series/models, instance metadata, and region availability."
         )
     )
@@ -344,31 +243,18 @@ def build_parser() -> argparse.ArgumentParser:
         default=DEFAULT_OUTPUT_DIR,
         help=f"Output directory. Default: {DEFAULT_OUTPUT_DIR}",
     )
-    parser.add_argument(
-        "--series",
-        nargs="+",
-        help=(
-            "Optional: override the built-in target series list. "
-            f"Current default: {', '.join(TARGET_SERIES)}"
-        ),
-    )
     return parser
 
 
 def main() -> None:
     args = build_parser().parse_args()
-    target_series = normalize_target_series(args.series)
-    if not target_series:
-        print("Error: target series list is empty", file=sys.stderr)
-        sys.exit(1)
-
     instances = load_instances(args.input)
-    filtered_instances = filter_instances_by_series(instances, target_series)
+    instances_with_series = enrich_instances_with_series(instances)
 
     try:
-        series_models = build_series_models(filtered_instances)
-        instance_metadata = build_instance_metadata(filtered_instances)
-        instance_regions = build_instance_regions(filtered_instances)
+        series_models = build_series_models(instances_with_series)
+        instance_metadata = build_instance_metadata(instances_with_series)
+        instance_regions = build_instance_regions(instances_with_series)
     except ValueError as exc:
         print(f"Error: {exc}", file=sys.stderr)
         sys.exit(1)
@@ -382,8 +268,7 @@ def main() -> None:
     write_json(instance_metadata_path, instance_metadata)
     write_json(instance_regions_path, instance_regions)
 
-    print(f"Target series: {', '.join(sorted(target_series))}")
-    print(f"Matched instances: {len(filtered_instances)}")
+    print(f"Matched instances: {len(instances_with_series)}")
     print(f"Series/models: {series_models_path}")
     print(f"Instance metadata: {instance_metadata_path}")
     print(f"Instance regions: {instance_regions_path}")
