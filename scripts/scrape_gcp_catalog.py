@@ -8,39 +8,36 @@ from pathlib import Path
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from scripts.aws.catalog_validation import (
+from scripts.gcp.catalog_validation import (
     DEFAULT_VALIDATION_CONFIG,
     INSTANCE_METADATA_FILENAME,
     INSTANCE_REGIONS_FILENAME,
     SERIES_MODELS_FILENAME,
     validate_catalog_payloads,
 )
-from scripts.aws.clean_instance_catalog import (
+from scripts.gcp.clean_instance_catalog import (
     DEFAULT_OUTPUT_DIR,
     build_instance_metadata,
     build_instance_regions,
     build_series_models,
-    enrich_instances_with_series,
+    enrich_instances,
     load_instances,
     write_json,
 )
-from scripts.aws.download import download_instances_json
+from scripts.gcp.download import download_instances_json
 
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description=(
-            "Download the latest AWS EC2 instance catalog and refresh the "
+            "Download the latest GCP instance catalog and refresh the "
             "normalized Arcoloom metadata files."
         )
     )
     parser.add_argument(
         "--input",
         type=Path,
-        help=(
-            "Reuse an existing instances.json file instead of downloading a "
-            "fresh copy from the upstream source."
-        ),
+        help="Reuse an existing instances.json file instead of downloading a fresh copy.",
     )
     parser.add_argument(
         "--output-dir",
@@ -53,13 +50,12 @@ def build_parser() -> argparse.ArgumentParser:
 
 def refresh_catalog(input_path: Path | None, output_dir: Path) -> tuple[Path, int]:
     source_path = Path(input_path) if input_path is not None else download_instances_json()
-
     instances = load_instances(source_path)
-    instances_with_series = enrich_instances_with_series(instances)
+    enriched_instances = enrich_instances(instances)
 
-    series_models = build_series_models(instances_with_series)
-    instance_metadata = build_instance_metadata(instances_with_series)
-    instance_regions = build_instance_regions(instances_with_series)
+    series_models = build_series_models(enriched_instances)
+    instance_metadata = build_instance_metadata(enriched_instances)
+    instance_regions = build_instance_regions(enriched_instances)
 
     validate_catalog_payloads(
         raw_instances=len(instances),
@@ -70,7 +66,7 @@ def refresh_catalog(input_path: Path | None, output_dir: Path) -> tuple[Path, in
         config=DEFAULT_VALIDATION_CONFIG,
     )
 
-    with tempfile.TemporaryDirectory(prefix="arco-catalog-") as temp_dir_name:
+    with tempfile.TemporaryDirectory(prefix="arco-gcp-catalog-") as temp_dir_name:
         temp_output_dir = Path(temp_dir_name)
         write_json(temp_output_dir / SERIES_MODELS_FILENAME, series_models)
         write_json(temp_output_dir / INSTANCE_METADATA_FILENAME, instance_metadata)
@@ -84,12 +80,11 @@ def refresh_catalog(input_path: Path | None, output_dir: Path) -> tuple[Path, in
         ):
             (temp_output_dir / filename).replace(output_dir / filename)
 
-    return source_path, len(instances_with_series)
+    return source_path, len(enriched_instances)
 
 
 def main() -> None:
     args = build_parser().parse_args()
-
     try:
         source_path, matched_instances = refresh_catalog(args.input, args.output_dir)
     except (OSError, ValueError) as exc:
@@ -99,9 +94,9 @@ def main() -> None:
     output_dir = args.output_dir
     print(f"Source: {source_path}")
     print(f"Matched instances: {matched_instances}")
-    print(f"Series/models: {output_dir / 'series_models.json'}")
-    print(f"Instance metadata: {output_dir / 'instance_metadata.json'}")
-    print(f"Instance regions: {output_dir / 'instance_regions.json'}")
+    print(f"Series/models: {output_dir / SERIES_MODELS_FILENAME}")
+    print(f"Instance metadata: {output_dir / INSTANCE_METADATA_FILENAME}")
+    print(f"Instance regions: {output_dir / INSTANCE_REGIONS_FILENAME}")
 
 
 if __name__ == "__main__":

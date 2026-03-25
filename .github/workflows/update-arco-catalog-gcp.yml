@@ -1,20 +1,20 @@
-name: Update AWS Catalog Metadata
+name: Update GCP Catalog Metadata
 
 on:
   workflow_dispatch:
   schedule:
-    # Monday 10:00 Asia/Shanghai
-    - cron: "0 2 * * 1"
+    # Thursday 10:00 Asia/Shanghai
+    - cron: "0 2 * * 4"
 
 permissions:
   contents: write
 
 concurrency:
-  group: update-arco-catalog-aws
+  group: update-arco-catalog-gcp
   cancel-in-progress: false
 
 jobs:
-  update-aws-catalog:
+  update-gcp-catalog:
     runs-on: ubuntu-latest
     timeout-minutes: 20
 
@@ -41,14 +41,14 @@ jobs:
       - name: Install dependencies
         run: uv sync --frozen
 
-      - name: Refresh AWS EC2 catalog
-        run: uv run scrape-ec2-catalog
+      - name: Refresh GCP catalog
+        run: uv run scrape-gcp-catalog
 
       - name: Detect catalog changes
         id: changes
         shell: bash
         run: |
-          if git diff --quiet -- data/aws; then
+          if git diff --quiet -- data/gcp; then
             echo "changed=false" >>"${GITHUB_OUTPUT}"
             echo "No catalog changes detected."
           else
@@ -58,14 +58,14 @@ jobs:
       - name: Commit and push updated metadata
         if: steps.changes.outputs.changed == 'true'
         run: |
-          git status --short -- data/aws
+          git status --short -- data/gcp
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/aws
-          git commit -m "chore(arco-catalog): refresh AWS catalog metadata"
+          git add data/gcp
+          git commit -m "chore(arco-catalog): refresh GCP catalog metadata"
           git push origin HEAD:${{ github.ref_name }}
 
-      - name: Publish AWS dataset to registry
+      - name: Publish GCP dataset to registry
         if: steps.changes.outputs.changed == 'true'
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -74,6 +74,9 @@ jobs:
           ARCO_REGISTRY_BUCKET: arco-registry
         run: |
           python scripts/publish_registry_dataset.py \
+            --provider gcp \
+            --dataset compute \
+            --dataset-dir data/gcp \
             --version "$(git rev-parse HEAD)" \
             --channel latest \
             --channel stable

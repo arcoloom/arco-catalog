@@ -9,24 +9,45 @@ import subprocess
 import tempfile
 from pathlib import Path
 
+if __package__ in (None, ""):
+    import sys
+
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from scripts.aws.catalog_validation import validate_dataset_dir as validate_aws_dataset_dir
+from scripts.gcp.catalog_validation import validate_dataset_dir as validate_gcp_dataset_dir
+
 
 DEFAULT_BUCKET = "arco-registry"
 DEFAULT_BASE_URL = "https://registry.arcoloom.com"
 DEFAULT_CHANNELS = ("latest", "stable")
-DATASET_PROVIDER = "aws"
-DATASET_NAME = "ec2"
-DATASET_FILES = {
+DEFAULT_DATASET_FILES = {
     "instance_metadata": "instance_metadata.json",
     "instance_regions": "instance_regions.json",
     "series_models": "series_models.json",
 }
 
+DATASET_VALIDATORS = {
+    ("aws", "ec2"): validate_aws_dataset_dir,
+    ("gcp", "compute"): validate_gcp_dataset_dir,
+}
+
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="Publish arco-catalog AWS dataset files and manifests to the registry bucket."
+        description="Publish arco-catalog dataset files and manifests to the registry bucket."
     )
     parser.add_argument("--version", required=True, help="Immutable dataset version.")
+    parser.add_argument(
+        "--provider",
+        default="aws",
+        help="Dataset provider namespace. Example: aws, gcp.",
+    )
+    parser.add_argument(
+        "--dataset",
+        default="ec2",
+        help="Dataset name within the provider namespace. Example: ec2, compute.",
+    )
     parser.add_argument(
         "--dataset-dir",
         type=Path,
@@ -95,17 +116,29 @@ def main() -> None:
     version = args.version.strip()
     if not version:
         raise SystemExit("--version is required")
+    provider = args.provider.strip().lower()
+    dataset_name = args.dataset.strip().lower()
+    if not provider:
+        raise SystemExit("--provider is required")
+    if not dataset_name:
+        raise SystemExit("--dataset is required")
 
     channels = tuple(dict.fromkeys(args.channels or DEFAULT_CHANNELS))
     base_url = args.base_url.rstrip("/")
     dataset_dir: Path = args.dataset_dir
 
+    validator = DATASET_VALIDATORS.get((provider, dataset_name))
+    if validator is None:
+        raise SystemExit(f"unsupported dataset validator for {provider}/{dataset_name}")
+
+    validator(dataset_dir)
+
     files: dict[str, dict[str, object]] = {}
-    for alias, filename in DATASET_FILES.items():
+    for alias, filename in DEFAULT_DATASET_FILES.items():
         path = dataset_dir / filename
         if not path.is_file():
             raise SystemExit(f"dataset file not found: {path}")
-        key = f"datasets/{DATASET_PROVIDER}/{DATASET_NAME}/{version}/{filename}"
+        key = f"datasets/{provider}/{dataset_name}/{version}/{filename}"
         upload_object(args.bucket, key, path)
         files[alias] = {
             "key": key,
@@ -118,8 +151,8 @@ def main() -> None:
     version_manifest = {
         "schema": "arco.dataset.version.v1",
         "dataset": {
-            "provider": DATASET_PROVIDER,
-            "name": DATASET_NAME,
+            "provider": provider,
+            "name": dataset_name,
             "version": version,
         },
         "files": files,
@@ -131,7 +164,7 @@ def main() -> None:
     try:
         upload_object(
             args.bucket,
-            f"manifests/versions/datasets/{DATASET_PROVIDER}/{DATASET_NAME}/{version}.json",
+            f"manifests/versions/datasets/{provider}/{dataset_name}/{version}.json",
             version_manifest_path,
         )
     finally:
@@ -142,8 +175,8 @@ def main() -> None:
             "schema": "arco.dataset.channel.v1",
             "channel": channel,
             "dataset": {
-                "provider": DATASET_PROVIDER,
-                "name": DATASET_NAME,
+                "provider": provider,
+                "name": dataset_name,
                 "version": version,
             },
             "files": files,
@@ -157,7 +190,7 @@ def main() -> None:
         try:
             upload_object(
                 args.bucket,
-                f"manifests/channels/datasets/{DATASET_PROVIDER}/{DATASET_NAME}/{channel}.json",
+                f"manifests/channels/datasets/{provider}/{dataset_name}/{channel}.json",
                 channel_manifest_path,
             )
         finally:

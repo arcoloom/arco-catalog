@@ -29,7 +29,17 @@ def download_instances_json(
     output_path = download_dir / OUTPUT_NAME
     request = Request(source_url, headers={"User-Agent": USER_AGENT})
     with urlopen(request, timeout=DOWNLOAD_TIMEOUT_SECONDS) as response:
-        output_path.write_bytes(response.read())
+        payload = response.read()
+
+    if not payload.strip():
+        raise ValueError(f"downloaded payload from {source_url} is empty")
+
+    if payload.lstrip()[:1] != b"[":
+        raise ValueError(
+            f"downloaded payload from {source_url} does not look like a JSON array"
+        )
+
+    output_path.write_bytes(payload)
 
     return output_path
 

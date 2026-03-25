@@ -76,23 +76,25 @@ def extract_series(instance_type: str) -> str | None:
 
 def load_instances(input_path: Path) -> list[dict[str, Any]]:
     if not input_path.exists():
-        print(f"Error: file not found: {input_path}", file=sys.stderr)
-        sys.exit(1)
+        raise ValueError(f"file not found: {input_path}")
 
     try:
         payload = json.loads(input_path.read_text(encoding="utf-8"))
     except json.JSONDecodeError as exc:
-        print(f"Error: failed to parse JSON: {exc}", file=sys.stderr)
-        sys.exit(1)
+        raise ValueError(f"failed to parse JSON: {exc}") from exc
 
     if not isinstance(payload, list):
-        print(
-            f"Error: expected top-level JSON to be a list, got {type(payload).__name__}",
-            file=sys.stderr,
+        raise ValueError(
+            f"expected top-level JSON to be a list, got {type(payload).__name__}"
         )
-        sys.exit(1)
 
-    return [item for item in payload if isinstance(item, dict)]
+    if not payload:
+        raise ValueError("source payload is empty")
+
+    if not all(isinstance(item, dict) for item in payload):
+        raise ValueError("source payload must contain only JSON objects")
+
+    return payload
 
 
 def enrich_instances_with_series(instances: list[dict[str, Any]]) -> list[dict[str, Any]]:

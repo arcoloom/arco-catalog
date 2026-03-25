@@ -10,6 +10,7 @@ dependencies = [
 
 [project.scripts]
 scrape-ec2-catalog = "scripts.scrape_ec2_catalog:main"
+scrape-gcp-catalog = "scripts.scrape_gcp_catalog:main"
 
 [build-system]
 requires = ["hatchling"]
