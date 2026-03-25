@@ -33,6 +33,11 @@ jobs:
       - name: Set up uv
         uses: astral-sh/setup-uv@v6
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
       - name: Install dependencies
         run: uv sync --frozen
 
@@ -52,3 +57,15 @@ jobs:
           git add data/aws
           git commit -m "chore(arco-catalog): refresh AWS catalog metadata"
           git push origin HEAD:${{ github.ref_name }}
+
+      - name: Publish AWS dataset to registry
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          ARCO_REGISTRY_BASE_URL: https://registry.arcoloom.com
+          ARCO_REGISTRY_BUCKET: arco-registry
+        run: |
+          python scripts/publish_registry_dataset.py \
+            --version "$(git rev-parse HEAD)" \
+            --channel latest \
+            --channel stable
