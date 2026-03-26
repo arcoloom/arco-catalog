@@ -48,11 +48,13 @@ jobs:
         id: changes
         shell: bash
         run: |
-          if git diff --quiet -- data/gcp; then
+          status_output="$(git status --porcelain --untracked-files=all -- data/gcp)"
+          if [ -z "$status_output" ]; then
             echo "changed=false" >>"${GITHUB_OUTPUT}"
             echo "No catalog changes detected."
           else
             echo "changed=true" >>"${GITHUB_OUTPUT}"
+            printf '%s\n' "$status_output"
           fi
 
       - name: Commit and push updated metadata
