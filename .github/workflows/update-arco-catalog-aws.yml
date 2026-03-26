@@ -57,13 +57,23 @@ jobs:
 
       - name: Commit and push updated metadata
         if: steps.changes.outputs.changed == 'true'
+        id: commit
+        shell: bash
         run: |
           git status --short -- data/aws
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/aws
           git commit -m "chore(arco-catalog): refresh AWS catalog metadata"
-          git push origin HEAD:${{ github.ref_name }}
+          commit_sha="$(git rev-parse HEAD)"
+          git push origin "HEAD:${{ github.ref_name }}"
+          git fetch origin "${{ github.ref_name }}" --depth=1
+          remote_sha="$(git rev-parse "origin/${{ github.ref_name }}")"
+          if [ "$remote_sha" != "$commit_sha" ]; then
+            echo "Expected remote ${GITHUB_REF_NAME} to be $commit_sha, got $remote_sha" >&2
+            exit 1
+          fi
+          echo "commit_sha=$commit_sha" >>"${GITHUB_OUTPUT}"
 
       - name: Publish AWS dataset to registry
         if: steps.changes.outputs.changed == 'true'
@@ -74,6 +84,6 @@ jobs:
           ARCO_REGISTRY_BUCKET: arco-registry
         run: |
           python scripts/publish_registry_dataset.py \
-            --version "$(git rev-parse HEAD)" \
+            --version "${{ steps.commit.outputs.commit_sha }}" \
             --channel latest \
             --channel stable
