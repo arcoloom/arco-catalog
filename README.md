@@ -1,1 +1,1 @@
-This is the AWS EC2 catalog scraper used by Arcoloom.
+This is the catalog scraper used by Arcoloom.
