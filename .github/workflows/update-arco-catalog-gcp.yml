@@ -57,7 +57,7 @@ jobs:
             printf '%s\n' "$status_output"
           fi
 
-      - name: Commit and push updated metadata
+      - name: Create local commit for updated metadata
         if: steps.changes.outputs.changed == 'true'
         id: commit
         shell: bash
@@ -68,13 +68,6 @@ jobs:
           git add data/gcp
           git commit -m "chore(arco-catalog): refresh GCP catalog metadata"
           commit_sha="$(git rev-parse HEAD)"
-          git push origin "HEAD:${{ github.ref_name }}"
-          git fetch origin "${{ github.ref_name }}" --depth=1
-          remote_sha="$(git rev-parse "origin/${{ github.ref_name }}")"
-          if [ "$remote_sha" != "$commit_sha" ]; then
-            echo "Expected remote ${GITHUB_REF_NAME} to be $commit_sha, got $remote_sha" >&2
-            exit 1
-          fi
           echo "commit_sha=$commit_sha" >>"${GITHUB_OUTPUT}"
 
       - name: Publish GCP dataset to registry
@@ -93,3 +86,16 @@ jobs:
             --remote \
             --channel latest \
             --channel stable
+
+      - name: Push committed metadata
+        if: steps.changes.outputs.changed == 'true'
+        shell: bash
+        run: |
+          commit_sha="${{ steps.commit.outputs.commit_sha }}"
+          git push origin "HEAD:${{ github.ref_name }}"
+          git fetch origin "${{ github.ref_name }}" --depth=1
+          remote_sha="$(git rev-parse "origin/${{ github.ref_name }}")"
+          if [ "$remote_sha" != "$commit_sha" ]; then
+            echo "Expected remote ${GITHUB_REF_NAME} to be $commit_sha, got $remote_sha" >&2
+            exit 1
+          fi
