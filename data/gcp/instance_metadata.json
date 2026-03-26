@@ -1,0 +1,7730 @@
+[
+  {
+    "series": "a2",
+    "instance_type": "a2-highgpu-1g",
+    "family": "Accelerator optimized",
+    "pretty_name": "A2 Highgpu 1g",
+    "generation": "current",
+    "vCPU": 12,
+    "memory": 85,
+    "network_performance": "Variable",
+    "GPU": 1,
+    "GPU_model": "NVIDIA A100",
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "a2",
+    "instance_type": "a2-highgpu-2g",
+    "family": "Accelerator optimized",
+    "pretty_name": "A2 Highgpu 2g",
+    "generation": "current",
+    "vCPU": 24,
+    "memory": 170,
+    "network_performance": "Variable",
+    "GPU": 2,
+    "GPU_model": "NVIDIA A100",
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "a2",
+    "instance_type": "a2-highgpu-4g",
+    "family": "Accelerator optimized",
+    "pretty_name": "A2 Highgpu 4g",
+    "generation": "current",
+    "vCPU": 48,
+    "memory": 340,
+    "network_performance": "Variable",
+    "GPU": 4,
+    "GPU_model": "NVIDIA A100",
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "a2",
+    "instance_type": "a2-highgpu-8g",
+    "family": "Accelerator optimized",
+    "pretty_name": "A2 Highgpu 8g",
+    "generation": "current",
+    "vCPU": 96,
+    "memory": 680,
+    "network_performance": "Variable",
+    "GPU": 8,
+    "GPU_model": "NVIDIA A100",
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "a2",
+    "instance_type": "a2-megagpu-16g",
+    "family": "Accelerator optimized",
+    "pretty_name": "A2 Megagpu 16g",
+    "generation": "current",
+    "vCPU": 96,
+    "memory": 1360,
+    "network_performance": "Variable",
+    "GPU": 16,
+    "GPU_model": "NVIDIA A100",
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "a2",
+    "instance_type": "a2-ultragpu-1g",
+    "family": "Accelerator optimized",
+    "pretty_name": "A2 Ultragpu 1g",
+    "generation": "current",
+    "vCPU": 12,
+    "memory": 170,
+    "network_performance": "Variable",
+    "GPU": 1,
+    "GPU_model": "NVIDIA A100",
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "a2",
+    "instance_type": "a2-ultragpu-2g",
+    "family": "Accelerator optimized",
+    "pretty_name": "A2 Ultragpu 2g",
+    "generation": "current",
+    "vCPU": 24,
+    "memory": 340,
+    "network_performance": "Variable",
+    "GPU": 2,
+    "GPU_model": "NVIDIA A100",
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "a2",
+    "instance_type": "a2-ultragpu-4g",
+    "family": "Accelerator optimized",
+    "pretty_name": "A2 Ultragpu 4g",
+    "generation": "current",
+    "vCPU": 48,
+    "memory": 680,
+    "network_performance": "Variable",
+    "GPU": 4,
+    "GPU_model": "NVIDIA A100",
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "a2",
+    "instance_type": "a2-ultragpu-8g",
+    "family": "Accelerator optimized",
+    "pretty_name": "A2 Ultragpu 8g",
+    "generation": "current",
+    "vCPU": 96,
+    "memory": 1360,
+    "network_performance": "Variable",
+    "GPU": 8,
+    "GPU_model": "NVIDIA A100",
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "a3",
+    "instance_type": "a3-edgegpu-8g",
+    "family": "Accelerator optimized",
+    "pretty_name": "A3 Edgegpu 8g",
+    "generation": "current",
+    "vCPU": 208,
+    "memory": 1872,
+    "network_performance": "Variable",
+    "GPU": 8,
+    "GPU_model": "NVIDIA H100",
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "a3",
+    "instance_type": "a3-edgegpu-8g-nolssd",
+    "family": "Accelerator optimized",
+    "pretty_name": "A3 Edgegpu 8g nolssd",
+    "generation": "current",
+    "vCPU": 208,
+    "memory": 1872,
+    "network_performance": "Variable",
+    "GPU": 8,
+    "GPU_model": "NVIDIA H100",
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "a3",
+    "instance_type": "a3-highgpu-1g",
+    "family": "Accelerator optimized",
+    "pretty_name": "A3 Highgpu 1g",
+    "generation": "current",
+    "vCPU": 26,
+    "memory": 234,
+    "network_performance": "Variable",
+    "GPU": 1,
+    "GPU_model": "NVIDIA H100",
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "a3",
+    "instance_type": "a3-highgpu-2g",
+    "family": "Accelerator optimized",
+    "pretty_name": "A3 Highgpu 2g",
+    "generation": "current",
+    "vCPU": 52,
+    "memory": 468,
+    "network_performance": "Variable",
+    "GPU": 2,
+    "GPU_model": "NVIDIA H100",
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "a3",
+    "instance_type": "a3-highgpu-4g",
+    "family": "Accelerator optimized",
+    "pretty_name": "A3 Highgpu 4g",
+    "generation": "current",
+    "vCPU": 104,
+    "memory": 936,
+    "network_performance": "Variable",
+    "GPU": 4,
+    "GPU_model": "NVIDIA H100",
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "a3",
+    "instance_type": "a3-highgpu-8g",
+    "family": "Accelerator optimized",
+    "pretty_name": "A3 Highgpu 8g",
+    "generation": "current",
+    "vCPU": 208,
+    "memory": 1872,
+    "network_performance": "Variable",
+    "GPU": 8,
+    "GPU_model": "NVIDIA H100",
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "a3",
+    "instance_type": "a3-megagpu-8g",
+    "family": "Accelerator optimized",
+    "pretty_name": "A3 Megagpu 8g",
+    "generation": "current",
+    "vCPU": 208,
+    "memory": 1872,
+    "network_performance": "Variable",
+    "GPU": 8,
+    "GPU_model": "NVIDIA H100",
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "a3",
+    "instance_type": "a3-ultragpu-8g",
+    "family": "Accelerator optimized",
+    "pretty_name": "A3 Ultragpu 8g",
+    "generation": "current",
+    "vCPU": 224,
+    "memory": 2952,
+    "network_performance": "Variable",
+    "GPU": 8,
+    "GPU_model": "NVIDIA H200",
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "a3",
+    "instance_type": "a3-ultragpu-8g-nolssd",
+    "family": "Accelerator optimized",
+    "pretty_name": "A3 Ultragpu 8g nolssd",
+    "generation": "current",
+    "vCPU": 224,
+    "memory": 2952,
+    "network_performance": "Variable",
+    "GPU": 8,
+    "GPU_model": "NVIDIA H200",
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c2d",
+    "instance_type": "c2d-highcpu-112",
+    "family": "Compute optimized",
+    "pretty_name": "C2D High CPU 112",
+    "generation": "current",
+    "vCPU": 112,
+    "memory": 224,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c2d",
+    "instance_type": "c2d-highcpu-16",
+    "family": "Compute optimized",
+    "pretty_name": "C2D High CPU 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 32,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c2d",
+    "instance_type": "c2d-highcpu-2",
+    "family": "Compute optimized",
+    "pretty_name": "C2D High CPU 2",
+    "generation": "current",
+    "vCPU": 2,
+    "memory": 4,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c2d",
+    "instance_type": "c2d-highcpu-32",
+    "family": "Compute optimized",
+    "pretty_name": "C2D High CPU 32",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 64,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c2d",
+    "instance_type": "c2d-highcpu-4",
+    "family": "Compute optimized",
+    "pretty_name": "C2D High CPU 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 8,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c2d",
+    "instance_type": "c2d-highcpu-56",
+    "family": "Compute optimized",
+    "pretty_name": "C2D High CPU 56",
+    "generation": "current",
+    "vCPU": 56,
+    "memory": 112,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c2d",
+    "instance_type": "c2d-highcpu-8",
+    "family": "Compute optimized",
+    "pretty_name": "C2D High CPU 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 16,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c2d",
+    "instance_type": "c2d-highmem-112",
+    "family": "Memory optimized",
+    "pretty_name": "C2D High Memory 112",
+    "generation": "current",
+    "vCPU": 112,
+    "memory": 896,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c2d",
+    "instance_type": "c2d-highmem-16",
+    "family": "Memory optimized",
+    "pretty_name": "C2D High Memory 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 128,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c2d",
+    "instance_type": "c2d-highmem-2",
+    "family": "Memory optimized",
+    "pretty_name": "C2D High Memory 2",
+    "generation": "current",
+    "vCPU": 2,
+    "memory": 16,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c2d",
+    "instance_type": "c2d-highmem-32",
+    "family": "Memory optimized",
+    "pretty_name": "C2D High Memory 32",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 256,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c2d",
+    "instance_type": "c2d-highmem-4",
+    "family": "Memory optimized",
+    "pretty_name": "C2D High Memory 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 32,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c2d",
+    "instance_type": "c2d-highmem-56",
+    "family": "Memory optimized",
+    "pretty_name": "C2D High Memory 56",
+    "generation": "current",
+    "vCPU": 56,
+    "memory": 448,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c2d",
+    "instance_type": "c2d-highmem-8",
+    "family": "Memory optimized",
+    "pretty_name": "C2D High Memory 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 64,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c2d",
+    "instance_type": "c2d-standard-112",
+    "family": "Compute optimized",
+    "pretty_name": "C2D Standard 112",
+    "generation": "current",
+    "vCPU": 112,
+    "memory": 448,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c2d",
+    "instance_type": "c2d-standard-16",
+    "family": "Compute optimized",
+    "pretty_name": "C2D Standard 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 64,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c2d",
+    "instance_type": "c2d-standard-2",
+    "family": "Compute optimized",
+    "pretty_name": "C2D Standard 2",
+    "generation": "current",
+    "vCPU": 2,
+    "memory": 8,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c2d",
+    "instance_type": "c2d-standard-32",
+    "family": "Compute optimized",
+    "pretty_name": "C2D Standard 32",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 128,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c2d",
+    "instance_type": "c2d-standard-4",
+    "family": "Compute optimized",
+    "pretty_name": "C2D Standard 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 16,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c2d",
+    "instance_type": "c2d-standard-56",
+    "family": "Compute optimized",
+    "pretty_name": "C2D Standard 56",
+    "generation": "current",
+    "vCPU": 56,
+    "memory": 224,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c2d",
+    "instance_type": "c2d-standard-8",
+    "family": "Compute optimized",
+    "pretty_name": "C2D Standard 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 32,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3",
+    "instance_type": "c3-highcpu-176",
+    "family": "Compute optimized",
+    "pretty_name": "C3 High CPU 176",
+    "generation": "current",
+    "vCPU": 176,
+    "memory": 352,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3",
+    "instance_type": "c3-highcpu-192-metal",
+    "family": "Compute optimized",
+    "pretty_name": "C3 High CPU 192 metal",
+    "generation": "current",
+    "vCPU": 192,
+    "memory": 512,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3",
+    "instance_type": "c3-highcpu-22",
+    "family": "Compute optimized",
+    "pretty_name": "C3 High CPU 22",
+    "generation": "current",
+    "vCPU": 22,
+    "memory": 44,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3",
+    "instance_type": "c3-highcpu-4",
+    "family": "Compute optimized",
+    "pretty_name": "C3 High CPU 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 8,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3",
+    "instance_type": "c3-highcpu-44",
+    "family": "Compute optimized",
+    "pretty_name": "C3 High CPU 44",
+    "generation": "current",
+    "vCPU": 44,
+    "memory": 88,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3",
+    "instance_type": "c3-highcpu-8",
+    "family": "Compute optimized",
+    "pretty_name": "C3 High CPU 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 16,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3",
+    "instance_type": "c3-highcpu-88",
+    "family": "Compute optimized",
+    "pretty_name": "C3 High CPU 88",
+    "generation": "current",
+    "vCPU": 88,
+    "memory": 176,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3",
+    "instance_type": "c3-highmem-176",
+    "family": "Memory optimized",
+    "pretty_name": "C3 High Memory 176",
+    "generation": "current",
+    "vCPU": 176,
+    "memory": 1408,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3",
+    "instance_type": "c3-highmem-192-metal",
+    "family": "Memory optimized",
+    "pretty_name": "C3 High Memory 192 metal",
+    "generation": "current",
+    "vCPU": 192,
+    "memory": 1536,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3",
+    "instance_type": "c3-highmem-22",
+    "family": "Memory optimized",
+    "pretty_name": "C3 High Memory 22",
+    "generation": "current",
+    "vCPU": 22,
+    "memory": 176,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3",
+    "instance_type": "c3-highmem-4",
+    "family": "Memory optimized",
+    "pretty_name": "C3 High Memory 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 32,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3",
+    "instance_type": "c3-highmem-44",
+    "family": "Memory optimized",
+    "pretty_name": "C3 High Memory 44",
+    "generation": "current",
+    "vCPU": 44,
+    "memory": 352,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3",
+    "instance_type": "c3-highmem-8",
+    "family": "Memory optimized",
+    "pretty_name": "C3 High Memory 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 64,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3",
+    "instance_type": "c3-highmem-88",
+    "family": "Memory optimized",
+    "pretty_name": "C3 High Memory 88",
+    "generation": "current",
+    "vCPU": 88,
+    "memory": 704,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3",
+    "instance_type": "c3-standard-176",
+    "family": "Compute optimized",
+    "pretty_name": "C3 Standard 176",
+    "generation": "current",
+    "vCPU": 176,
+    "memory": 704,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3",
+    "instance_type": "c3-standard-176-lssd",
+    "family": "Compute optimized",
+    "pretty_name": "C3 Standard 176 lssd",
+    "generation": "current",
+    "vCPU": 176,
+    "memory": 704,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3",
+    "instance_type": "c3-standard-192-metal",
+    "family": "Compute optimized",
+    "pretty_name": "C3 Standard 192 metal",
+    "generation": "current",
+    "vCPU": 192,
+    "memory": 768,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3",
+    "instance_type": "c3-standard-22",
+    "family": "Compute optimized",
+    "pretty_name": "C3 Standard 22",
+    "generation": "current",
+    "vCPU": 22,
+    "memory": 88,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3",
+    "instance_type": "c3-standard-22-lssd",
+    "family": "Compute optimized",
+    "pretty_name": "C3 Standard 22 lssd",
+    "generation": "current",
+    "vCPU": 22,
+    "memory": 88,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3",
+    "instance_type": "c3-standard-4",
+    "family": "Compute optimized",
+    "pretty_name": "C3 Standard 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 16,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3",
+    "instance_type": "c3-standard-4-lssd",
+    "family": "Compute optimized",
+    "pretty_name": "C3 Standard 4 lssd",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 16,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3",
+    "instance_type": "c3-standard-44",
+    "family": "Compute optimized",
+    "pretty_name": "C3 Standard 44",
+    "generation": "current",
+    "vCPU": 44,
+    "memory": 176,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3",
+    "instance_type": "c3-standard-44-lssd",
+    "family": "Compute optimized",
+    "pretty_name": "C3 Standard 44 lssd",
+    "generation": "current",
+    "vCPU": 44,
+    "memory": 176,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3",
+    "instance_type": "c3-standard-8",
+    "family": "Compute optimized",
+    "pretty_name": "C3 Standard 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 32,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3",
+    "instance_type": "c3-standard-8-lssd",
+    "family": "Compute optimized",
+    "pretty_name": "C3 Standard 8 lssd",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 32,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3",
+    "instance_type": "c3-standard-88",
+    "family": "Compute optimized",
+    "pretty_name": "C3 Standard 88",
+    "generation": "current",
+    "vCPU": 88,
+    "memory": 352,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3",
+    "instance_type": "c3-standard-88-lssd",
+    "family": "Compute optimized",
+    "pretty_name": "C3 Standard 88 lssd",
+    "generation": "current",
+    "vCPU": 88,
+    "memory": 352,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-highcpu-16",
+    "family": "Compute optimized",
+    "pretty_name": "C3D High CPU 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 32,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-highcpu-180",
+    "family": "Compute optimized",
+    "pretty_name": "C3D High CPU 180",
+    "generation": "current",
+    "vCPU": 180,
+    "memory": 354,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-highcpu-30",
+    "family": "Compute optimized",
+    "pretty_name": "C3D High CPU 30",
+    "generation": "current",
+    "vCPU": 30,
+    "memory": 59,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-highcpu-360",
+    "family": "Compute optimized",
+    "pretty_name": "C3D High CPU 360",
+    "generation": "current",
+    "vCPU": 360,
+    "memory": 708,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-highcpu-4",
+    "family": "Compute optimized",
+    "pretty_name": "C3D High CPU 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 8,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-highcpu-60",
+    "family": "Compute optimized",
+    "pretty_name": "C3D High CPU 60",
+    "generation": "current",
+    "vCPU": 60,
+    "memory": 118,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-highcpu-8",
+    "family": "Compute optimized",
+    "pretty_name": "C3D High CPU 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 16,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-highcpu-90",
+    "family": "Compute optimized",
+    "pretty_name": "C3D High CPU 90",
+    "generation": "current",
+    "vCPU": 90,
+    "memory": 177,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-highmem-16",
+    "family": "Memory optimized",
+    "pretty_name": "C3D High Memory 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 128,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-highmem-16-lssd",
+    "family": "Memory optimized",
+    "pretty_name": "C3D High Memory 16 lssd",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 128,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-highmem-180",
+    "family": "Memory optimized",
+    "pretty_name": "C3D High Memory 180",
+    "generation": "current",
+    "vCPU": 180,
+    "memory": 1440,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-highmem-180-lssd",
+    "family": "Memory optimized",
+    "pretty_name": "C3D High Memory 180 lssd",
+    "generation": "current",
+    "vCPU": 180,
+    "memory": 1440,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-highmem-30",
+    "family": "Memory optimized",
+    "pretty_name": "C3D High Memory 30",
+    "generation": "current",
+    "vCPU": 30,
+    "memory": 240,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-highmem-30-lssd",
+    "family": "Memory optimized",
+    "pretty_name": "C3D High Memory 30 lssd",
+    "generation": "current",
+    "vCPU": 30,
+    "memory": 240,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-highmem-360",
+    "family": "Memory optimized",
+    "pretty_name": "C3D High Memory 360",
+    "generation": "current",
+    "vCPU": 360,
+    "memory": 2880,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-highmem-360-lssd",
+    "family": "Memory optimized",
+    "pretty_name": "C3D High Memory 360 lssd",
+    "generation": "current",
+    "vCPU": 360,
+    "memory": 2880,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-highmem-4",
+    "family": "Memory optimized",
+    "pretty_name": "C3D High Memory 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 32,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-highmem-60",
+    "family": "Memory optimized",
+    "pretty_name": "C3D High Memory 60",
+    "generation": "current",
+    "vCPU": 60,
+    "memory": 480,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-highmem-60-lssd",
+    "family": "Memory optimized",
+    "pretty_name": "C3D High Memory 60 lssd",
+    "generation": "current",
+    "vCPU": 60,
+    "memory": 480,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-highmem-8",
+    "family": "Memory optimized",
+    "pretty_name": "C3D High Memory 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 64,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-highmem-8-lssd",
+    "family": "Memory optimized",
+    "pretty_name": "C3D High Memory 8 lssd",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 64,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-highmem-90",
+    "family": "Memory optimized",
+    "pretty_name": "C3D High Memory 90",
+    "generation": "current",
+    "vCPU": 90,
+    "memory": 720,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-highmem-90-lssd",
+    "family": "Memory optimized",
+    "pretty_name": "C3D High Memory 90 lssd",
+    "generation": "current",
+    "vCPU": 90,
+    "memory": 720,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-standard-16",
+    "family": "Compute optimized",
+    "pretty_name": "C3D Standard 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 64,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-standard-16-lssd",
+    "family": "Compute optimized",
+    "pretty_name": "C3D Standard 16 lssd",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 64,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-standard-180",
+    "family": "Compute optimized",
+    "pretty_name": "C3D Standard 180",
+    "generation": "current",
+    "vCPU": 180,
+    "memory": 720,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-standard-180-lssd",
+    "family": "Compute optimized",
+    "pretty_name": "C3D Standard 180 lssd",
+    "generation": "current",
+    "vCPU": 180,
+    "memory": 720,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-standard-30",
+    "family": "Compute optimized",
+    "pretty_name": "C3D Standard 30",
+    "generation": "current",
+    "vCPU": 30,
+    "memory": 120,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-standard-30-lssd",
+    "family": "Compute optimized",
+    "pretty_name": "C3D Standard 30 lssd",
+    "generation": "current",
+    "vCPU": 30,
+    "memory": 120,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-standard-360",
+    "family": "Compute optimized",
+    "pretty_name": "C3D Standard 360",
+    "generation": "current",
+    "vCPU": 360,
+    "memory": 1440,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-standard-360-lssd",
+    "family": "Compute optimized",
+    "pretty_name": "C3D Standard 360 lssd",
+    "generation": "current",
+    "vCPU": 360,
+    "memory": 1440,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-standard-4",
+    "family": "Compute optimized",
+    "pretty_name": "C3D Standard 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 16,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-standard-60",
+    "family": "Compute optimized",
+    "pretty_name": "C3D Standard 60",
+    "generation": "current",
+    "vCPU": 60,
+    "memory": 240,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-standard-60-lssd",
+    "family": "Compute optimized",
+    "pretty_name": "C3D Standard 60 lssd",
+    "generation": "current",
+    "vCPU": 60,
+    "memory": 240,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-standard-8",
+    "family": "Compute optimized",
+    "pretty_name": "C3D Standard 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 32,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-standard-8-lssd",
+    "family": "Compute optimized",
+    "pretty_name": "C3D Standard 8 lssd",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 32,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-standard-90",
+    "family": "Compute optimized",
+    "pretty_name": "C3D Standard 90",
+    "generation": "current",
+    "vCPU": 90,
+    "memory": 360,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c3d",
+    "instance_type": "c3d-standard-90-lssd",
+    "family": "Compute optimized",
+    "pretty_name": "C3D Standard 90 lssd",
+    "generation": "current",
+    "vCPU": 90,
+    "memory": 360,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highcpu-144",
+    "family": "Compute optimized",
+    "pretty_name": "C4 High CPU 144",
+    "generation": "current",
+    "vCPU": 144,
+    "memory": 288,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highcpu-16",
+    "family": "Compute optimized",
+    "pretty_name": "C4 High CPU 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 32,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highcpu-192",
+    "family": "Compute optimized",
+    "pretty_name": "C4 High CPU 192",
+    "generation": "current",
+    "vCPU": 192,
+    "memory": 384,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highcpu-2",
+    "family": "Compute optimized",
+    "pretty_name": "C4 High CPU 2",
+    "generation": "current",
+    "vCPU": 2,
+    "memory": 4,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highcpu-24",
+    "family": "Compute optimized",
+    "pretty_name": "C4 High CPU 24",
+    "generation": "current",
+    "vCPU": 24,
+    "memory": 48,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highcpu-288",
+    "family": "Compute optimized",
+    "pretty_name": "C4 High CPU 288",
+    "generation": "current",
+    "vCPU": 288,
+    "memory": 576,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highcpu-32",
+    "family": "Compute optimized",
+    "pretty_name": "C4 High CPU 32",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 64,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highcpu-4",
+    "family": "Compute optimized",
+    "pretty_name": "C4 High CPU 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 8,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highcpu-48",
+    "family": "Compute optimized",
+    "pretty_name": "C4 High CPU 48",
+    "generation": "current",
+    "vCPU": 48,
+    "memory": 96,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highcpu-8",
+    "family": "Compute optimized",
+    "pretty_name": "C4 High CPU 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 16,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highcpu-96",
+    "family": "Compute optimized",
+    "pretty_name": "C4 High CPU 96",
+    "generation": "current",
+    "vCPU": 96,
+    "memory": 192,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highmem-144",
+    "family": "Memory optimized",
+    "pretty_name": "C4 High Memory 144",
+    "generation": "current",
+    "vCPU": 144,
+    "memory": 1116,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highmem-144-lssd",
+    "family": "Memory optimized",
+    "pretty_name": "C4 High Memory 144 lssd",
+    "generation": "current",
+    "vCPU": 144,
+    "memory": 1116,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highmem-16",
+    "family": "Memory optimized",
+    "pretty_name": "C4 High Memory 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 124,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highmem-16-lssd",
+    "family": "Memory optimized",
+    "pretty_name": "C4 High Memory 16 lssd",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 124,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highmem-192",
+    "family": "Memory optimized",
+    "pretty_name": "C4 High Memory 192",
+    "generation": "current",
+    "vCPU": 192,
+    "memory": 1488,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highmem-192-lssd",
+    "family": "Memory optimized",
+    "pretty_name": "C4 High Memory 192 lssd",
+    "generation": "current",
+    "vCPU": 192,
+    "memory": 1488,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highmem-2",
+    "family": "Memory optimized",
+    "pretty_name": "C4 High Memory 2",
+    "generation": "current",
+    "vCPU": 2,
+    "memory": 15,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highmem-24",
+    "family": "Memory optimized",
+    "pretty_name": "C4 High Memory 24",
+    "generation": "current",
+    "vCPU": 24,
+    "memory": 186,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highmem-24-lssd",
+    "family": "Memory optimized",
+    "pretty_name": "C4 High Memory 24 lssd",
+    "generation": "current",
+    "vCPU": 24,
+    "memory": 186,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highmem-288",
+    "family": "Memory optimized",
+    "pretty_name": "C4 High Memory 288",
+    "generation": "current",
+    "vCPU": 288,
+    "memory": 2232,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highmem-288-lssd",
+    "family": "Memory optimized",
+    "pretty_name": "C4 High Memory 288 lssd",
+    "generation": "current",
+    "vCPU": 288,
+    "memory": 2232,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highmem-288-lssd-metal",
+    "family": "Memory optimized",
+    "pretty_name": "C4 High Memory 288 lssd metal",
+    "generation": "current",
+    "vCPU": 288,
+    "memory": 2232,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highmem-288-metal",
+    "family": "Memory optimized",
+    "pretty_name": "C4 High Memory 288 metal",
+    "generation": "current",
+    "vCPU": 288,
+    "memory": 2232,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highmem-32",
+    "family": "Memory optimized",
+    "pretty_name": "C4 High Memory 32",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 248,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highmem-32-lssd",
+    "family": "Memory optimized",
+    "pretty_name": "C4 High Memory 32 lssd",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 248,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highmem-4",
+    "family": "Memory optimized",
+    "pretty_name": "C4 High Memory 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 31,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highmem-4-lssd",
+    "family": "Memory optimized",
+    "pretty_name": "C4 High Memory 4 lssd",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 31,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highmem-48",
+    "family": "Memory optimized",
+    "pretty_name": "C4 High Memory 48",
+    "generation": "current",
+    "vCPU": 48,
+    "memory": 372,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highmem-48-lssd",
+    "family": "Memory optimized",
+    "pretty_name": "C4 High Memory 48 lssd",
+    "generation": "current",
+    "vCPU": 48,
+    "memory": 372,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highmem-8",
+    "family": "Memory optimized",
+    "pretty_name": "C4 High Memory 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 62,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highmem-8-lssd",
+    "family": "Memory optimized",
+    "pretty_name": "C4 High Memory 8 lssd",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 62,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highmem-96",
+    "family": "Memory optimized",
+    "pretty_name": "C4 High Memory 96",
+    "generation": "current",
+    "vCPU": 96,
+    "memory": 744,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-highmem-96-lssd",
+    "family": "Memory optimized",
+    "pretty_name": "C4 High Memory 96 lssd",
+    "generation": "current",
+    "vCPU": 96,
+    "memory": 744,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-standard-144",
+    "family": "Compute optimized",
+    "pretty_name": "C4 Standard 144",
+    "generation": "current",
+    "vCPU": 144,
+    "memory": 540,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-standard-144-lssd",
+    "family": "Compute optimized",
+    "pretty_name": "C4 Standard 144 lssd",
+    "generation": "current",
+    "vCPU": 144,
+    "memory": 540,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-standard-16",
+    "family": "Compute optimized",
+    "pretty_name": "C4 Standard 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 60,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-standard-16-lssd",
+    "family": "Compute optimized",
+    "pretty_name": "C4 Standard 16 lssd",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 60,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-standard-192",
+    "family": "Compute optimized",
+    "pretty_name": "C4 Standard 192",
+    "generation": "current",
+    "vCPU": 192,
+    "memory": 720,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-standard-192-lssd",
+    "family": "Compute optimized",
+    "pretty_name": "C4 Standard 192 lssd",
+    "generation": "current",
+    "vCPU": 192,
+    "memory": 720,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-standard-2",
+    "family": "Compute optimized",
+    "pretty_name": "C4 Standard 2",
+    "generation": "current",
+    "vCPU": 2,
+    "memory": 7,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-standard-24",
+    "family": "Compute optimized",
+    "pretty_name": "C4 Standard 24",
+    "generation": "current",
+    "vCPU": 24,
+    "memory": 90,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-standard-24-lssd",
+    "family": "Compute optimized",
+    "pretty_name": "C4 Standard 24 lssd",
+    "generation": "current",
+    "vCPU": 24,
+    "memory": 90,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-standard-288",
+    "family": "Compute optimized",
+    "pretty_name": "C4 Standard 288",
+    "generation": "current",
+    "vCPU": 288,
+    "memory": 1080,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-standard-288-lssd",
+    "family": "Compute optimized",
+    "pretty_name": "C4 Standard 288 lssd",
+    "generation": "current",
+    "vCPU": 288,
+    "memory": 1080,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-standard-288-lssd-metal",
+    "family": "Compute optimized",
+    "pretty_name": "C4 Standard 288 lssd metal",
+    "generation": "current",
+    "vCPU": 288,
+    "memory": 1080,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-standard-288-metal",
+    "family": "Compute optimized",
+    "pretty_name": "C4 Standard 288 metal",
+    "generation": "current",
+    "vCPU": 288,
+    "memory": 1080,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-standard-32",
+    "family": "Compute optimized",
+    "pretty_name": "C4 Standard 32",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 120,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-standard-32-lssd",
+    "family": "Compute optimized",
+    "pretty_name": "C4 Standard 32 lssd",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 120,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-standard-4",
+    "family": "Compute optimized",
+    "pretty_name": "C4 Standard 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 15,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-standard-4-lssd",
+    "family": "Compute optimized",
+    "pretty_name": "C4 Standard 4 lssd",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 15,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-standard-48",
+    "family": "Compute optimized",
+    "pretty_name": "C4 Standard 48",
+    "generation": "current",
+    "vCPU": 48,
+    "memory": 180,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-standard-48-lssd",
+    "family": "Compute optimized",
+    "pretty_name": "C4 Standard 48 lssd",
+    "generation": "current",
+    "vCPU": 48,
+    "memory": 180,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-standard-8",
+    "family": "Compute optimized",
+    "pretty_name": "C4 Standard 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 30,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-standard-8-lssd",
+    "family": "Compute optimized",
+    "pretty_name": "C4 Standard 8 lssd",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 30,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-standard-96",
+    "family": "Compute optimized",
+    "pretty_name": "C4 Standard 96",
+    "generation": "current",
+    "vCPU": 96,
+    "memory": 360,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "c4",
+    "instance_type": "c4-standard-96-lssd",
+    "family": "Compute optimized",
+    "pretty_name": "C4 Standard 96 lssd",
+    "generation": "current",
+    "vCPU": 96,
+    "memory": 360,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "e2",
+    "instance_type": "e2-highcpu-16",
+    "family": "Compute optimized",
+    "pretty_name": "E2 High CPU 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 16,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "e2",
+    "instance_type": "e2-highcpu-2",
+    "family": "Compute optimized",
+    "pretty_name": "E2 High CPU 2",
+    "generation": "current",
+    "vCPU": 2,
+    "memory": 2,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "e2",
+    "instance_type": "e2-highcpu-32",
+    "family": "Compute optimized",
+    "pretty_name": "E2 High CPU 32",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 32,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "e2",
+    "instance_type": "e2-highcpu-4",
+    "family": "Compute optimized",
+    "pretty_name": "E2 High CPU 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 4,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "e2",
+    "instance_type": "e2-highcpu-8",
+    "family": "Compute optimized",
+    "pretty_name": "E2 High CPU 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 8,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "e2",
+    "instance_type": "e2-highmem-16",
+    "family": "Memory optimized",
+    "pretty_name": "E2 High Memory 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 128,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "e2",
+    "instance_type": "e2-highmem-2",
+    "family": "Memory optimized",
+    "pretty_name": "E2 High Memory 2",
+    "generation": "current",
+    "vCPU": 2,
+    "memory": 16,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "e2",
+    "instance_type": "e2-highmem-4",
+    "family": "Memory optimized",
+    "pretty_name": "E2 High Memory 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 32,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "e2",
+    "instance_type": "e2-highmem-8",
+    "family": "Memory optimized",
+    "pretty_name": "E2 High Memory 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 64,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "e2",
+    "instance_type": "e2-medium",
+    "family": "General purpose",
+    "pretty_name": "E2 Medium",
+    "generation": "current",
+    "vCPU": 2,
+    "memory": 4,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": true,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "e2",
+    "instance_type": "e2-micro",
+    "family": "General purpose",
+    "pretty_name": "E2 Micro",
+    "generation": "current",
+    "vCPU": 2,
+    "memory": 1,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": true,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "e2",
+    "instance_type": "e2-small",
+    "family": "General purpose",
+    "pretty_name": "E2 Small",
+    "generation": "current",
+    "vCPU": 2,
+    "memory": 2,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": true,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "e2",
+    "instance_type": "e2-standard-16",
+    "family": "General purpose",
+    "pretty_name": "E2 Standard 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 64,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "e2",
+    "instance_type": "e2-standard-2",
+    "family": "General purpose",
+    "pretty_name": "E2 Standard 2",
+    "generation": "current",
+    "vCPU": 2,
+    "memory": 8,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "e2",
+    "instance_type": "e2-standard-32",
+    "family": "General purpose",
+    "pretty_name": "E2 Standard 32",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 128,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "e2",
+    "instance_type": "e2-standard-4",
+    "family": "General purpose",
+    "pretty_name": "E2 Standard 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 16,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "e2",
+    "instance_type": "e2-standard-8",
+    "family": "General purpose",
+    "pretty_name": "E2 Standard 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 32,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "g2",
+    "instance_type": "g2-standard-12",
+    "family": "Accelerator optimized",
+    "pretty_name": "G2 Standard 12",
+    "generation": "current",
+    "vCPU": 12,
+    "memory": 48,
+    "network_performance": "Variable",
+    "GPU": 1,
+    "GPU_model": "NVIDIA L4",
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "g2",
+    "instance_type": "g2-standard-16",
+    "family": "Accelerator optimized",
+    "pretty_name": "G2 Standard 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 64,
+    "network_performance": "Variable",
+    "GPU": 1,
+    "GPU_model": "NVIDIA L4",
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "g2",
+    "instance_type": "g2-standard-24",
+    "family": "Accelerator optimized",
+    "pretty_name": "G2 Standard 24",
+    "generation": "current",
+    "vCPU": 24,
+    "memory": 96,
+    "network_performance": "Variable",
+    "GPU": 2,
+    "GPU_model": "NVIDIA L4",
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "g2",
+    "instance_type": "g2-standard-32",
+    "family": "Accelerator optimized",
+    "pretty_name": "G2 Standard 32",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 128,
+    "network_performance": "Variable",
+    "GPU": 1,
+    "GPU_model": "NVIDIA L4",
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "g2",
+    "instance_type": "g2-standard-4",
+    "family": "Accelerator optimized",
+    "pretty_name": "G2 Standard 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 16,
+    "network_performance": "Variable",
+    "GPU": 1,
+    "GPU_model": "NVIDIA L4",
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "g2",
+    "instance_type": "g2-standard-48",
+    "family": "Accelerator optimized",
+    "pretty_name": "G2 Standard 48",
+    "generation": "current",
+    "vCPU": 48,
+    "memory": 192,
+    "network_performance": "Variable",
+    "GPU": 4,
+    "GPU_model": "NVIDIA L4",
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "g2",
+    "instance_type": "g2-standard-8",
+    "family": "Accelerator optimized",
+    "pretty_name": "G2 Standard 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 32,
+    "network_performance": "Variable",
+    "GPU": 1,
+    "GPU_model": "NVIDIA L4",
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "g2",
+    "instance_type": "g2-standard-96",
+    "family": "Accelerator optimized",
+    "pretty_name": "G2 Standard 96",
+    "generation": "current",
+    "vCPU": 96,
+    "memory": 384,
+    "network_performance": "Variable",
+    "GPU": 8,
+    "GPU_model": "NVIDIA L4",
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "h3",
+    "instance_type": "h3-standard-88",
+    "family": "Compute optimized",
+    "pretty_name": "H3 Standard 88",
+    "generation": "current",
+    "vCPU": 88,
+    "memory": 352,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "m3",
+    "instance_type": "m3-megamem-128",
+    "family": "Memory optimized",
+    "pretty_name": "M3 Mega Memory 128",
+    "generation": "current",
+    "vCPU": 128,
+    "memory": 1952,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "m3",
+    "instance_type": "m3-megamem-64",
+    "family": "Memory optimized",
+    "pretty_name": "M3 Mega Memory 64",
+    "generation": "current",
+    "vCPU": 64,
+    "memory": 976,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "m3",
+    "instance_type": "m3-ultramem-128",
+    "family": "Memory optimized",
+    "pretty_name": "M3 Ultra Memory 128",
+    "generation": "current",
+    "vCPU": 128,
+    "memory": 3904,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "m3",
+    "instance_type": "m3-ultramem-32",
+    "family": "Memory optimized",
+    "pretty_name": "M3 Ultra Memory 32",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 976,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "m3",
+    "instance_type": "m3-ultramem-64",
+    "family": "Memory optimized",
+    "pretty_name": "M3 Ultra Memory 64",
+    "generation": "current",
+    "vCPU": 64,
+    "memory": 1952,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "m4",
+    "instance_type": "m4-hypermem-16",
+    "family": "Memory optimized",
+    "pretty_name": "M4 Hypermem 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 248,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "m4",
+    "instance_type": "m4-hypermem-32",
+    "family": "Memory optimized",
+    "pretty_name": "M4 Hypermem 32",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 496,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "m4",
+    "instance_type": "m4-hypermem-64",
+    "family": "Memory optimized",
+    "pretty_name": "M4 Hypermem 64",
+    "generation": "current",
+    "vCPU": 64,
+    "memory": 992,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "m4",
+    "instance_type": "m4-megamem-112",
+    "family": "Memory optimized",
+    "pretty_name": "M4 Mega Memory 112",
+    "generation": "current",
+    "vCPU": 112,
+    "memory": 1488,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "m4",
+    "instance_type": "m4-megamem-224",
+    "family": "Memory optimized",
+    "pretty_name": "M4 Mega Memory 224",
+    "generation": "current",
+    "vCPU": 224,
+    "memory": 2976,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "m4",
+    "instance_type": "m4-megamem-28",
+    "family": "Memory optimized",
+    "pretty_name": "M4 Mega Memory 28",
+    "generation": "current",
+    "vCPU": 28,
+    "memory": 372,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "m4",
+    "instance_type": "m4-megamem-56",
+    "family": "Memory optimized",
+    "pretty_name": "M4 Mega Memory 56",
+    "generation": "current",
+    "vCPU": 56,
+    "memory": 744,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "m4",
+    "instance_type": "m4-ultramem-112",
+    "family": "Memory optimized",
+    "pretty_name": "M4 Ultra Memory 112",
+    "generation": "current",
+    "vCPU": 112,
+    "memory": 2976,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "m4",
+    "instance_type": "m4-ultramem-224",
+    "family": "Memory optimized",
+    "pretty_name": "M4 Ultra Memory 224",
+    "generation": "current",
+    "vCPU": 224,
+    "memory": 5952,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "m4",
+    "instance_type": "m4-ultramem-56",
+    "family": "Memory optimized",
+    "pretty_name": "M4 Ultra Memory 56",
+    "generation": "current",
+    "vCPU": 56,
+    "memory": 1488,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n1",
+    "instance_type": "n1-highcpu-16",
+    "family": "Compute optimized",
+    "pretty_name": "N1 High CPU 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 14.400390625,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n1",
+    "instance_type": "n1-highcpu-2",
+    "family": "Compute optimized",
+    "pretty_name": "N1 High CPU 2",
+    "generation": "current",
+    "vCPU": 2,
+    "memory": 1.7998046875,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n1",
+    "instance_type": "n1-highcpu-32",
+    "family": "Compute optimized",
+    "pretty_name": "N1 High CPU 32",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 28.7998046875,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n1",
+    "instance_type": "n1-highcpu-4",
+    "family": "Compute optimized",
+    "pretty_name": "N1 High CPU 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 3.599609375,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n1",
+    "instance_type": "n1-highcpu-64",
+    "family": "Compute optimized",
+    "pretty_name": "N1 High CPU 64",
+    "generation": "current",
+    "vCPU": 64,
+    "memory": 57.599609375,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n1",
+    "instance_type": "n1-highcpu-8",
+    "family": "Compute optimized",
+    "pretty_name": "N1 High CPU 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 7.2001953125,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n1",
+    "instance_type": "n1-highcpu-96",
+    "family": "Compute optimized",
+    "pretty_name": "N1 High CPU 96",
+    "generation": "current",
+    "vCPU": 96,
+    "memory": 86.400390625,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n1",
+    "instance_type": "n1-highmem-16",
+    "family": "Memory optimized",
+    "pretty_name": "N1 High Memory 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 104,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n1",
+    "instance_type": "n1-highmem-2",
+    "family": "Memory optimized",
+    "pretty_name": "N1 High Memory 2",
+    "generation": "current",
+    "vCPU": 2,
+    "memory": 13,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n1",
+    "instance_type": "n1-highmem-32",
+    "family": "Memory optimized",
+    "pretty_name": "N1 High Memory 32",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 208,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n1",
+    "instance_type": "n1-highmem-4",
+    "family": "Memory optimized",
+    "pretty_name": "N1 High Memory 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 26,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n1",
+    "instance_type": "n1-highmem-64",
+    "family": "Memory optimized",
+    "pretty_name": "N1 High Memory 64",
+    "generation": "current",
+    "vCPU": 64,
+    "memory": 416,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n1",
+    "instance_type": "n1-highmem-8",
+    "family": "Memory optimized",
+    "pretty_name": "N1 High Memory 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 52,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n1",
+    "instance_type": "n1-highmem-96",
+    "family": "Memory optimized",
+    "pretty_name": "N1 High Memory 96",
+    "generation": "current",
+    "vCPU": 96,
+    "memory": 624,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n1",
+    "instance_type": "n1-megamem-96",
+    "family": "Memory optimized",
+    "pretty_name": "N1 Mega Memory 96",
+    "generation": "current",
+    "vCPU": 96,
+    "memory": 1433.599609375,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n1",
+    "instance_type": "n1-standard-1",
+    "family": "General purpose",
+    "pretty_name": "N1 Standard 1",
+    "generation": "current",
+    "vCPU": 1,
+    "memory": 3.75,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n1",
+    "instance_type": "n1-standard-16",
+    "family": "General purpose",
+    "pretty_name": "N1 Standard 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 60,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n1",
+    "instance_type": "n1-standard-2",
+    "family": "General purpose",
+    "pretty_name": "N1 Standard 2",
+    "generation": "current",
+    "vCPU": 2,
+    "memory": 7.5,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n1",
+    "instance_type": "n1-standard-32",
+    "family": "General purpose",
+    "pretty_name": "N1 Standard 32",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 120,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n1",
+    "instance_type": "n1-standard-4",
+    "family": "General purpose",
+    "pretty_name": "N1 Standard 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 15,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n1",
+    "instance_type": "n1-standard-64",
+    "family": "General purpose",
+    "pretty_name": "N1 Standard 64",
+    "generation": "current",
+    "vCPU": 64,
+    "memory": 240,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n1",
+    "instance_type": "n1-standard-8",
+    "family": "General purpose",
+    "pretty_name": "N1 Standard 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 30,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n1",
+    "instance_type": "n1-standard-96",
+    "family": "General purpose",
+    "pretty_name": "N1 Standard 96",
+    "generation": "current",
+    "vCPU": 96,
+    "memory": 360,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n1",
+    "instance_type": "n1-ultramem-160",
+    "family": "Memory optimized",
+    "pretty_name": "N1 Ultra Memory 160",
+    "generation": "current",
+    "vCPU": 160,
+    "memory": 3844,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n1",
+    "instance_type": "n1-ultramem-40",
+    "family": "Memory optimized",
+    "pretty_name": "N1 Ultra Memory 40",
+    "generation": "current",
+    "vCPU": 40,
+    "memory": 961,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n1",
+    "instance_type": "n1-ultramem-80",
+    "family": "Memory optimized",
+    "pretty_name": "N1 Ultra Memory 80",
+    "generation": "current",
+    "vCPU": 80,
+    "memory": 1922,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2",
+    "instance_type": "n2-highcpu-16",
+    "family": "Compute optimized",
+    "pretty_name": "N2 High CPU 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 16,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2",
+    "instance_type": "n2-highcpu-2",
+    "family": "Compute optimized",
+    "pretty_name": "N2 High CPU 2",
+    "generation": "current",
+    "vCPU": 2,
+    "memory": 2,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2",
+    "instance_type": "n2-highcpu-32",
+    "family": "Compute optimized",
+    "pretty_name": "N2 High CPU 32",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 32,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2",
+    "instance_type": "n2-highcpu-4",
+    "family": "Compute optimized",
+    "pretty_name": "N2 High CPU 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 4,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2",
+    "instance_type": "n2-highcpu-48",
+    "family": "Compute optimized",
+    "pretty_name": "N2 High CPU 48",
+    "generation": "current",
+    "vCPU": 48,
+    "memory": 48,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2",
+    "instance_type": "n2-highcpu-64",
+    "family": "Compute optimized",
+    "pretty_name": "N2 High CPU 64",
+    "generation": "current",
+    "vCPU": 64,
+    "memory": 64,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2",
+    "instance_type": "n2-highcpu-8",
+    "family": "Compute optimized",
+    "pretty_name": "N2 High CPU 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 8,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2",
+    "instance_type": "n2-highcpu-80",
+    "family": "Compute optimized",
+    "pretty_name": "N2 High CPU 80",
+    "generation": "current",
+    "vCPU": 80,
+    "memory": 80,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2",
+    "instance_type": "n2-highcpu-96",
+    "family": "Compute optimized",
+    "pretty_name": "N2 High CPU 96",
+    "generation": "current",
+    "vCPU": 96,
+    "memory": 96,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2",
+    "instance_type": "n2-highmem-128",
+    "family": "Memory optimized",
+    "pretty_name": "N2 High Memory 128",
+    "generation": "current",
+    "vCPU": 128,
+    "memory": 864,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2",
+    "instance_type": "n2-highmem-16",
+    "family": "Memory optimized",
+    "pretty_name": "N2 High Memory 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 128,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2",
+    "instance_type": "n2-highmem-2",
+    "family": "Memory optimized",
+    "pretty_name": "N2 High Memory 2",
+    "generation": "current",
+    "vCPU": 2,
+    "memory": 16,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2",
+    "instance_type": "n2-highmem-32",
+    "family": "Memory optimized",
+    "pretty_name": "N2 High Memory 32",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 256,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2",
+    "instance_type": "n2-highmem-4",
+    "family": "Memory optimized",
+    "pretty_name": "N2 High Memory 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 32,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2",
+    "instance_type": "n2-highmem-48",
+    "family": "Memory optimized",
+    "pretty_name": "N2 High Memory 48",
+    "generation": "current",
+    "vCPU": 48,
+    "memory": 384,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2",
+    "instance_type": "n2-highmem-64",
+    "family": "Memory optimized",
+    "pretty_name": "N2 High Memory 64",
+    "generation": "current",
+    "vCPU": 64,
+    "memory": 512,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2",
+    "instance_type": "n2-highmem-8",
+    "family": "Memory optimized",
+    "pretty_name": "N2 High Memory 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 64,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2",
+    "instance_type": "n2-highmem-80",
+    "family": "Memory optimized",
+    "pretty_name": "N2 High Memory 80",
+    "generation": "current",
+    "vCPU": 80,
+    "memory": 640,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2",
+    "instance_type": "n2-highmem-96",
+    "family": "Memory optimized",
+    "pretty_name": "N2 High Memory 96",
+    "generation": "current",
+    "vCPU": 96,
+    "memory": 768,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2",
+    "instance_type": "n2-standard-128",
+    "family": "General purpose",
+    "pretty_name": "N2 Standard 128",
+    "generation": "current",
+    "vCPU": 128,
+    "memory": 512,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2",
+    "instance_type": "n2-standard-16",
+    "family": "General purpose",
+    "pretty_name": "N2 Standard 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 64,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2",
+    "instance_type": "n2-standard-2",
+    "family": "General purpose",
+    "pretty_name": "N2 Standard 2",
+    "generation": "current",
+    "vCPU": 2,
+    "memory": 8,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2",
+    "instance_type": "n2-standard-32",
+    "family": "General purpose",
+    "pretty_name": "N2 Standard 32",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 128,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2",
+    "instance_type": "n2-standard-4",
+    "family": "General purpose",
+    "pretty_name": "N2 Standard 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 16,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2",
+    "instance_type": "n2-standard-48",
+    "family": "General purpose",
+    "pretty_name": "N2 Standard 48",
+    "generation": "current",
+    "vCPU": 48,
+    "memory": 192,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2",
+    "instance_type": "n2-standard-64",
+    "family": "General purpose",
+    "pretty_name": "N2 Standard 64",
+    "generation": "current",
+    "vCPU": 64,
+    "memory": 256,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2",
+    "instance_type": "n2-standard-8",
+    "family": "General purpose",
+    "pretty_name": "N2 Standard 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 32,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2",
+    "instance_type": "n2-standard-80",
+    "family": "General purpose",
+    "pretty_name": "N2 Standard 80",
+    "generation": "current",
+    "vCPU": 80,
+    "memory": 320,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2",
+    "instance_type": "n2-standard-96",
+    "family": "General purpose",
+    "pretty_name": "N2 Standard 96",
+    "generation": "current",
+    "vCPU": 96,
+    "memory": 384,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-highcpu-128",
+    "family": "Compute optimized",
+    "pretty_name": "N2D High CPU 128",
+    "generation": "current",
+    "vCPU": 128,
+    "memory": 128,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-highcpu-16",
+    "family": "Compute optimized",
+    "pretty_name": "N2D High CPU 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 16,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-highcpu-2",
+    "family": "Compute optimized",
+    "pretty_name": "N2D High CPU 2",
+    "generation": "current",
+    "vCPU": 2,
+    "memory": 2,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-highcpu-224",
+    "family": "Compute optimized",
+    "pretty_name": "N2D High CPU 224",
+    "generation": "current",
+    "vCPU": 224,
+    "memory": 224,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-highcpu-32",
+    "family": "Compute optimized",
+    "pretty_name": "N2D High CPU 32",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 32,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-highcpu-4",
+    "family": "Compute optimized",
+    "pretty_name": "N2D High CPU 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 4,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-highcpu-48",
+    "family": "Compute optimized",
+    "pretty_name": "N2D High CPU 48",
+    "generation": "current",
+    "vCPU": 48,
+    "memory": 48,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-highcpu-64",
+    "family": "Compute optimized",
+    "pretty_name": "N2D High CPU 64",
+    "generation": "current",
+    "vCPU": 64,
+    "memory": 64,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-highcpu-8",
+    "family": "Compute optimized",
+    "pretty_name": "N2D High CPU 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 8,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-highcpu-80",
+    "family": "Compute optimized",
+    "pretty_name": "N2D High CPU 80",
+    "generation": "current",
+    "vCPU": 80,
+    "memory": 80,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-highcpu-96",
+    "family": "Compute optimized",
+    "pretty_name": "N2D High CPU 96",
+    "generation": "current",
+    "vCPU": 96,
+    "memory": 96,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-highmem-16",
+    "family": "Memory optimized",
+    "pretty_name": "N2D High Memory 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 128,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-highmem-2",
+    "family": "Memory optimized",
+    "pretty_name": "N2D High Memory 2",
+    "generation": "current",
+    "vCPU": 2,
+    "memory": 16,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-highmem-32",
+    "family": "Memory optimized",
+    "pretty_name": "N2D High Memory 32",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 256,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-highmem-4",
+    "family": "Memory optimized",
+    "pretty_name": "N2D High Memory 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 32,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-highmem-48",
+    "family": "Memory optimized",
+    "pretty_name": "N2D High Memory 48",
+    "generation": "current",
+    "vCPU": 48,
+    "memory": 384,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-highmem-64",
+    "family": "Memory optimized",
+    "pretty_name": "N2D High Memory 64",
+    "generation": "current",
+    "vCPU": 64,
+    "memory": 512,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-highmem-8",
+    "family": "Memory optimized",
+    "pretty_name": "N2D High Memory 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 64,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-highmem-80",
+    "family": "Memory optimized",
+    "pretty_name": "N2D High Memory 80",
+    "generation": "current",
+    "vCPU": 80,
+    "memory": 640,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-highmem-96",
+    "family": "Memory optimized",
+    "pretty_name": "N2D High Memory 96",
+    "generation": "current",
+    "vCPU": 96,
+    "memory": 768,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-standard-128",
+    "family": "General purpose",
+    "pretty_name": "N2D Standard 128",
+    "generation": "current",
+    "vCPU": 128,
+    "memory": 512,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-standard-16",
+    "family": "General purpose",
+    "pretty_name": "N2D Standard 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 64,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-standard-2",
+    "family": "General purpose",
+    "pretty_name": "N2D Standard 2",
+    "generation": "current",
+    "vCPU": 2,
+    "memory": 8,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-standard-224",
+    "family": "General purpose",
+    "pretty_name": "N2D Standard 224",
+    "generation": "current",
+    "vCPU": 224,
+    "memory": 896,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-standard-32",
+    "family": "General purpose",
+    "pretty_name": "N2D Standard 32",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 128,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-standard-4",
+    "family": "General purpose",
+    "pretty_name": "N2D Standard 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 16,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-standard-48",
+    "family": "General purpose",
+    "pretty_name": "N2D Standard 48",
+    "generation": "current",
+    "vCPU": 48,
+    "memory": 192,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-standard-64",
+    "family": "General purpose",
+    "pretty_name": "N2D Standard 64",
+    "generation": "current",
+    "vCPU": 64,
+    "memory": 256,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-standard-8",
+    "family": "General purpose",
+    "pretty_name": "N2D Standard 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 32,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-standard-80",
+    "family": "General purpose",
+    "pretty_name": "N2D Standard 80",
+    "generation": "current",
+    "vCPU": 80,
+    "memory": 320,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n2d",
+    "instance_type": "n2d-standard-96",
+    "family": "General purpose",
+    "pretty_name": "N2D Standard 96",
+    "generation": "current",
+    "vCPU": 96,
+    "memory": 384,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4",
+    "instance_type": "n4-highcpu-16",
+    "family": "Compute optimized",
+    "pretty_name": "N4 High CPU 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 32,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4",
+    "instance_type": "n4-highcpu-2",
+    "family": "Compute optimized",
+    "pretty_name": "N4 High CPU 2",
+    "generation": "current",
+    "vCPU": 2,
+    "memory": 4,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4",
+    "instance_type": "n4-highcpu-32",
+    "family": "Compute optimized",
+    "pretty_name": "N4 High CPU 32",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 64,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4",
+    "instance_type": "n4-highcpu-4",
+    "family": "Compute optimized",
+    "pretty_name": "N4 High CPU 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 8,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4",
+    "instance_type": "n4-highcpu-48",
+    "family": "Compute optimized",
+    "pretty_name": "N4 High CPU 48",
+    "generation": "current",
+    "vCPU": 48,
+    "memory": 96,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4",
+    "instance_type": "n4-highcpu-64",
+    "family": "Compute optimized",
+    "pretty_name": "N4 High CPU 64",
+    "generation": "current",
+    "vCPU": 64,
+    "memory": 128,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4",
+    "instance_type": "n4-highcpu-8",
+    "family": "Compute optimized",
+    "pretty_name": "N4 High CPU 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 16,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4",
+    "instance_type": "n4-highcpu-80",
+    "family": "Compute optimized",
+    "pretty_name": "N4 High CPU 80",
+    "generation": "current",
+    "vCPU": 80,
+    "memory": 160,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4",
+    "instance_type": "n4-highmem-16",
+    "family": "Memory optimized",
+    "pretty_name": "N4 High Memory 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 128,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4",
+    "instance_type": "n4-highmem-2",
+    "family": "Memory optimized",
+    "pretty_name": "N4 High Memory 2",
+    "generation": "current",
+    "vCPU": 2,
+    "memory": 16,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4",
+    "instance_type": "n4-highmem-32",
+    "family": "Memory optimized",
+    "pretty_name": "N4 High Memory 32",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 256,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4",
+    "instance_type": "n4-highmem-4",
+    "family": "Memory optimized",
+    "pretty_name": "N4 High Memory 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 32,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4",
+    "instance_type": "n4-highmem-48",
+    "family": "Memory optimized",
+    "pretty_name": "N4 High Memory 48",
+    "generation": "current",
+    "vCPU": 48,
+    "memory": 384,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4",
+    "instance_type": "n4-highmem-64",
+    "family": "Memory optimized",
+    "pretty_name": "N4 High Memory 64",
+    "generation": "current",
+    "vCPU": 64,
+    "memory": 512,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4",
+    "instance_type": "n4-highmem-8",
+    "family": "Memory optimized",
+    "pretty_name": "N4 High Memory 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 64,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4",
+    "instance_type": "n4-highmem-80",
+    "family": "Memory optimized",
+    "pretty_name": "N4 High Memory 80",
+    "generation": "current",
+    "vCPU": 80,
+    "memory": 640,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4",
+    "instance_type": "n4-standard-16",
+    "family": "General purpose",
+    "pretty_name": "N4 Standard 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 64,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4",
+    "instance_type": "n4-standard-2",
+    "family": "General purpose",
+    "pretty_name": "N4 Standard 2",
+    "generation": "current",
+    "vCPU": 2,
+    "memory": 8,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4",
+    "instance_type": "n4-standard-32",
+    "family": "General purpose",
+    "pretty_name": "N4 Standard 32",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 128,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4",
+    "instance_type": "n4-standard-4",
+    "family": "General purpose",
+    "pretty_name": "N4 Standard 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 16,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4",
+    "instance_type": "n4-standard-48",
+    "family": "General purpose",
+    "pretty_name": "N4 Standard 48",
+    "generation": "current",
+    "vCPU": 48,
+    "memory": 192,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4",
+    "instance_type": "n4-standard-64",
+    "family": "General purpose",
+    "pretty_name": "N4 Standard 64",
+    "generation": "current",
+    "vCPU": 64,
+    "memory": 256,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4",
+    "instance_type": "n4-standard-8",
+    "family": "General purpose",
+    "pretty_name": "N4 Standard 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 32,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4",
+    "instance_type": "n4-standard-80",
+    "family": "General purpose",
+    "pretty_name": "N4 Standard 80",
+    "generation": "current",
+    "vCPU": 80,
+    "memory": 320,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4d",
+    "instance_type": "n4d-highcpu-16",
+    "family": "Compute optimized",
+    "pretty_name": "N4D High CPU 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 32,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4d",
+    "instance_type": "n4d-highcpu-2",
+    "family": "Compute optimized",
+    "pretty_name": "N4D High CPU 2",
+    "generation": "current",
+    "vCPU": 2,
+    "memory": 4,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4d",
+    "instance_type": "n4d-highcpu-32",
+    "family": "Compute optimized",
+    "pretty_name": "N4D High CPU 32",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 64,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4d",
+    "instance_type": "n4d-highcpu-4",
+    "family": "Compute optimized",
+    "pretty_name": "N4D High CPU 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 8,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4d",
+    "instance_type": "n4d-highcpu-48",
+    "family": "Compute optimized",
+    "pretty_name": "N4D High CPU 48",
+    "generation": "current",
+    "vCPU": 48,
+    "memory": 96,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4d",
+    "instance_type": "n4d-highcpu-64",
+    "family": "Compute optimized",
+    "pretty_name": "N4D High CPU 64",
+    "generation": "current",
+    "vCPU": 64,
+    "memory": 128,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4d",
+    "instance_type": "n4d-highcpu-8",
+    "family": "Compute optimized",
+    "pretty_name": "N4D High CPU 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 16,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4d",
+    "instance_type": "n4d-highcpu-80",
+    "family": "Compute optimized",
+    "pretty_name": "N4D High CPU 80",
+    "generation": "current",
+    "vCPU": 80,
+    "memory": 160,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4d",
+    "instance_type": "n4d-highcpu-96",
+    "family": "Compute optimized",
+    "pretty_name": "N4D High CPU 96",
+    "generation": "current",
+    "vCPU": 96,
+    "memory": 192,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4d",
+    "instance_type": "n4d-highmem-16",
+    "family": "Memory optimized",
+    "pretty_name": "N4D High Memory 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 128,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4d",
+    "instance_type": "n4d-highmem-2",
+    "family": "Memory optimized",
+    "pretty_name": "N4D High Memory 2",
+    "generation": "current",
+    "vCPU": 2,
+    "memory": 16,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4d",
+    "instance_type": "n4d-highmem-32",
+    "family": "Memory optimized",
+    "pretty_name": "N4D High Memory 32",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 256,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4d",
+    "instance_type": "n4d-highmem-4",
+    "family": "Memory optimized",
+    "pretty_name": "N4D High Memory 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 32,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4d",
+    "instance_type": "n4d-highmem-48",
+    "family": "Memory optimized",
+    "pretty_name": "N4D High Memory 48",
+    "generation": "current",
+    "vCPU": 48,
+    "memory": 384,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4d",
+    "instance_type": "n4d-highmem-64",
+    "family": "Memory optimized",
+    "pretty_name": "N4D High Memory 64",
+    "generation": "current",
+    "vCPU": 64,
+    "memory": 512,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4d",
+    "instance_type": "n4d-highmem-8",
+    "family": "Memory optimized",
+    "pretty_name": "N4D High Memory 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 64,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4d",
+    "instance_type": "n4d-highmem-80",
+    "family": "Memory optimized",
+    "pretty_name": "N4D High Memory 80",
+    "generation": "current",
+    "vCPU": 80,
+    "memory": 640,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4d",
+    "instance_type": "n4d-highmem-96",
+    "family": "Memory optimized",
+    "pretty_name": "N4D High Memory 96",
+    "generation": "current",
+    "vCPU": 96,
+    "memory": 768,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4d",
+    "instance_type": "n4d-standard-16",
+    "family": "General purpose",
+    "pretty_name": "N4D Standard 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 64,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4d",
+    "instance_type": "n4d-standard-2",
+    "family": "General purpose",
+    "pretty_name": "N4D Standard 2",
+    "generation": "current",
+    "vCPU": 2,
+    "memory": 8,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4d",
+    "instance_type": "n4d-standard-32",
+    "family": "General purpose",
+    "pretty_name": "N4D Standard 32",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 128,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4d",
+    "instance_type": "n4d-standard-4",
+    "family": "General purpose",
+    "pretty_name": "N4D Standard 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 16,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4d",
+    "instance_type": "n4d-standard-48",
+    "family": "General purpose",
+    "pretty_name": "N4D Standard 48",
+    "generation": "current",
+    "vCPU": 48,
+    "memory": 192,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4d",
+    "instance_type": "n4d-standard-64",
+    "family": "General purpose",
+    "pretty_name": "N4D Standard 64",
+    "generation": "current",
+    "vCPU": 64,
+    "memory": 256,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4d",
+    "instance_type": "n4d-standard-8",
+    "family": "General purpose",
+    "pretty_name": "N4D Standard 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 32,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4d",
+    "instance_type": "n4d-standard-80",
+    "family": "General purpose",
+    "pretty_name": "N4D Standard 80",
+    "generation": "current",
+    "vCPU": 80,
+    "memory": 320,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "n4d",
+    "instance_type": "n4d-standard-96",
+    "family": "General purpose",
+    "pretty_name": "N4D Standard 96",
+    "generation": "current",
+    "vCPU": 96,
+    "memory": 384,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "t2a",
+    "instance_type": "t2a-standard-1",
+    "family": "General purpose",
+    "pretty_name": "T2A Standard 1",
+    "generation": "current",
+    "vCPU": 1,
+    "memory": 4,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "arm64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "t2a",
+    "instance_type": "t2a-standard-16",
+    "family": "General purpose",
+    "pretty_name": "T2A Standard 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 64,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "arm64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "t2a",
+    "instance_type": "t2a-standard-2",
+    "family": "General purpose",
+    "pretty_name": "T2A Standard 2",
+    "generation": "current",
+    "vCPU": 2,
+    "memory": 8,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "arm64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "t2a",
+    "instance_type": "t2a-standard-32",
+    "family": "General purpose",
+    "pretty_name": "T2A Standard 32",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 128,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "arm64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "t2a",
+    "instance_type": "t2a-standard-4",
+    "family": "General purpose",
+    "pretty_name": "T2A Standard 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 16,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "arm64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "t2a",
+    "instance_type": "t2a-standard-48",
+    "family": "General purpose",
+    "pretty_name": "T2A Standard 48",
+    "generation": "current",
+    "vCPU": 48,
+    "memory": 192,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "arm64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "t2a",
+    "instance_type": "t2a-standard-8",
+    "family": "General purpose",
+    "pretty_name": "T2A Standard 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 32,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "arm64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "t2d",
+    "instance_type": "t2d-standard-1",
+    "family": "General purpose",
+    "pretty_name": "T2D Standard 1",
+    "generation": "current",
+    "vCPU": 1,
+    "memory": 4,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "t2d",
+    "instance_type": "t2d-standard-16",
+    "family": "General purpose",
+    "pretty_name": "T2D Standard 16",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 64,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "t2d",
+    "instance_type": "t2d-standard-2",
+    "family": "General purpose",
+    "pretty_name": "T2D Standard 2",
+    "generation": "current",
+    "vCPU": 2,
+    "memory": 8,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "t2d",
+    "instance_type": "t2d-standard-32",
+    "family": "General purpose",
+    "pretty_name": "T2D Standard 32",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 128,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "t2d",
+    "instance_type": "t2d-standard-4",
+    "family": "General purpose",
+    "pretty_name": "T2D Standard 4",
+    "generation": "current",
+    "vCPU": 4,
+    "memory": 16,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "t2d",
+    "instance_type": "t2d-standard-48",
+    "family": "General purpose",
+    "pretty_name": "T2D Standard 48",
+    "generation": "current",
+    "vCPU": 48,
+    "memory": 192,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "t2d",
+    "instance_type": "t2d-standard-60",
+    "family": "General purpose",
+    "pretty_name": "T2D Standard 60",
+    "generation": "current",
+    "vCPU": 60,
+    "memory": 240,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "t2d",
+    "instance_type": "t2d-standard-8",
+    "family": "General purpose",
+    "pretty_name": "T2D Standard 8",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 32,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "z3",
+    "instance_type": "z3-highmem-14-standardlssd",
+    "family": "Memory optimized",
+    "pretty_name": "Z3 High Memory 14 standardlssd",
+    "generation": "current",
+    "vCPU": 14,
+    "memory": 112,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "z3",
+    "instance_type": "z3-highmem-16-highlssd",
+    "family": "Memory optimized",
+    "pretty_name": "Z3 High Memory 16 highlssd",
+    "generation": "current",
+    "vCPU": 16,
+    "memory": 128,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "z3",
+    "instance_type": "z3-highmem-176",
+    "family": "Memory optimized",
+    "pretty_name": "Z3 High Memory 176",
+    "generation": "current",
+    "vCPU": 176,
+    "memory": 1408,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "z3",
+    "instance_type": "z3-highmem-176-standardlssd",
+    "family": "Memory optimized",
+    "pretty_name": "Z3 High Memory 176 standardlssd",
+    "generation": "current",
+    "vCPU": 176,
+    "memory": 1408,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "z3",
+    "instance_type": "z3-highmem-192-highlssd-metal",
+    "family": "Memory optimized",
+    "pretty_name": "Z3 High Memory 192 highlssd metal",
+    "generation": "current",
+    "vCPU": 192,
+    "memory": 1536,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "z3",
+    "instance_type": "z3-highmem-22-highlssd",
+    "family": "Memory optimized",
+    "pretty_name": "Z3 High Memory 22 highlssd",
+    "generation": "current",
+    "vCPU": 22,
+    "memory": 176,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "z3",
+    "instance_type": "z3-highmem-22-standardlssd",
+    "family": "Memory optimized",
+    "pretty_name": "Z3 High Memory 22 standardlssd",
+    "generation": "current",
+    "vCPU": 22,
+    "memory": 176,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "z3",
+    "instance_type": "z3-highmem-32-highlssd",
+    "family": "Memory optimized",
+    "pretty_name": "Z3 High Memory 32 highlssd",
+    "generation": "current",
+    "vCPU": 32,
+    "memory": 256,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "z3",
+    "instance_type": "z3-highmem-44-highlssd",
+    "family": "Memory optimized",
+    "pretty_name": "Z3 High Memory 44 highlssd",
+    "generation": "current",
+    "vCPU": 44,
+    "memory": 352,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "z3",
+    "instance_type": "z3-highmem-44-standardlssd",
+    "family": "Memory optimized",
+    "pretty_name": "Z3 High Memory 44 standardlssd",
+    "generation": "current",
+    "vCPU": 44,
+    "memory": 352,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "z3",
+    "instance_type": "z3-highmem-8-highlssd",
+    "family": "Memory optimized",
+    "pretty_name": "Z3 High Memory 8 highlssd",
+    "generation": "current",
+    "vCPU": 8,
+    "memory": 64,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "z3",
+    "instance_type": "z3-highmem-88",
+    "family": "Memory optimized",
+    "pretty_name": "Z3 High Memory 88",
+    "generation": "current",
+    "vCPU": 88,
+    "memory": 704,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "z3",
+    "instance_type": "z3-highmem-88-highlssd",
+    "family": "Memory optimized",
+    "pretty_name": "Z3 High Memory 88 highlssd",
+    "generation": "current",
+    "vCPU": 88,
+    "memory": 704,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  },
+  {
+    "series": "z3",
+    "instance_type": "z3-highmem-88-standardlssd",
+    "family": "Memory optimized",
+    "pretty_name": "Z3 High Memory 88 standardlssd",
+    "generation": "current",
+    "vCPU": 88,
+    "memory": 704,
+    "network_performance": "Variable",
+    "GPU": 0,
+    "GPU_model": null,
+    "local_ssd": false,
+    "shared_cpu": false,
+    "arch": [
+      "x86_64"
+    ],
+    "support_os": [
+      "linux",
+      "windows"
+    ]
+  }
+]
