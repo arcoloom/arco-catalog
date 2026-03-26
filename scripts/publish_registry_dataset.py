@@ -21,6 +21,8 @@ from scripts.gcp.catalog_validation import validate_dataset_dir as validate_gcp_
 DEFAULT_BUCKET = "arco-registry"
 DEFAULT_BASE_URL = "https://registry.arcoloom.com"
 DEFAULT_CHANNELS = ("latest", "stable")
+REPO_ROOT = Path(__file__).resolve().parents[2]
+REGISTRY_DIR = REPO_ROOT / "arco-registry"
 DEFAULT_DATASET_FILES = {
     "instance_metadata": "instance_metadata.json",
     "instance_regions": "instance_regions.json",
@@ -71,6 +73,28 @@ def build_parser() -> argparse.ArgumentParser:
         default=[],
         help="Channel name to update. Can be provided multiple times.",
     )
+    parser.add_argument(
+        "--wrangler-config",
+        type=Path,
+        help=(
+            "Path to the Wrangler config used for uploads. Defaults to "
+            "arco-registry/.wrangler/deploy.toml when present, otherwise arco-registry/wrangler.toml."
+        ),
+    )
+    target_group = parser.add_mutually_exclusive_group()
+    target_group.add_argument(
+        "--remote",
+        dest="remote",
+        action="store_true",
+        help="Publish to the remote R2 bucket. This is the default.",
+    )
+    target_group.add_argument(
+        "--local",
+        dest="remote",
+        action="store_false",
+        help="Publish to Wrangler's local R2 bucket for testing.",
+    )
+    parser.set_defaults(remote=True)
     return parser
 
 
@@ -82,20 +106,52 @@ def sha256_file(path: Path) -> str:
     return hasher.hexdigest()
 
 
-def upload_object(bucket: str, key: str, source: Path) -> None:
-    subprocess.run(
-        [
-            "npx",
-            "wrangler@4",
-            "r2",
-            "object",
-            "put",
-            f"{bucket}/{key}",
-            "--file",
-            str(source),
-        ],
-        check=True,
+def resolve_wrangler_config(path: Path | None) -> tuple[Path, Path]:
+    if path is not None:
+        config_path = path.resolve()
+        if not config_path.is_file():
+            raise SystemExit(f"wrangler config not found: {config_path}")
+        return config_path.parent, config_path
+
+    deploy_config = REGISTRY_DIR / ".wrangler" / "deploy.toml"
+    if deploy_config.is_file():
+        return REGISTRY_DIR, deploy_config
+
+    base_config = REGISTRY_DIR / "wrangler.toml"
+    if base_config.is_file():
+        return REGISTRY_DIR, base_config
+
+    raise SystemExit(
+        f"wrangler config not found under {REGISTRY_DIR}; "
+        "run `cd arco-registry && npm run config:render` or pass --wrangler-config"
     )
+
+
+def upload_object(
+    bucket: str,
+    key: str,
+    source: Path,
+    *,
+    remote: bool,
+    wrangler_cwd: Path,
+    wrangler_config: Path,
+) -> None:
+    command = [
+        "npx",
+        "wrangler@4",
+        "r2",
+        "object",
+        "put",
+        f"{bucket}/{key}",
+        "--file",
+        str(source),
+        "--config",
+        str(wrangler_config),
+    ]
+    if remote:
+        command.append("--remote")
+
+    subprocess.run(command, check=True, cwd=wrangler_cwd)
 
 
 def write_json_temp(payload: dict[str, object]) -> Path:
@@ -126,6 +182,7 @@ def main() -> None:
     channels = tuple(dict.fromkeys(args.channels or DEFAULT_CHANNELS))
     base_url = args.base_url.rstrip("/")
     dataset_dir: Path = args.dataset_dir
+    wrangler_cwd, wrangler_config = resolve_wrangler_config(args.wrangler_config)
 
     validator = DATASET_VALIDATORS.get((provider, dataset_name))
     if validator is None:
@@ -139,7 +196,14 @@ def main() -> None:
         if not path.is_file():
             raise SystemExit(f"dataset file not found: {path}")
         key = f"datasets/{provider}/{dataset_name}/{version}/{filename}"
-        upload_object(args.bucket, key, path)
+        upload_object(
+            args.bucket,
+            key,
+            path,
+            remote=args.remote,
+            wrangler_cwd=wrangler_cwd,
+            wrangler_config=wrangler_config,
+        )
         files[alias] = {
             "key": key,
             "filename": filename,
@@ -166,6 +230,9 @@ def main() -> None:
             args.bucket,
             f"manifests/versions/datasets/{provider}/{dataset_name}/{version}.json",
             version_manifest_path,
+            remote=args.remote,
+            wrangler_cwd=wrangler_cwd,
+            wrangler_config=wrangler_config,
         )
     finally:
         version_manifest_path.unlink(missing_ok=True)
@@ -192,6 +259,9 @@ def main() -> None:
                 args.bucket,
                 f"manifests/channels/datasets/{provider}/{dataset_name}/{channel}.json",
                 channel_manifest_path,
+                remote=args.remote,
+                wrangler_cwd=wrangler_cwd,
+                wrangler_config=wrangler_config,
             )
         finally:
             channel_manifest_path.unlink(missing_ok=True)
