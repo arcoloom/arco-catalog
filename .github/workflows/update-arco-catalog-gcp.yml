@@ -75,7 +75,7 @@ jobs:
           S3_BUCKET: ${{ secrets.S3_BUCKET }}
           ARCO_REGISTRY_BASE_URL: https://registry.arcoloom.com
         run: |
-          python scripts/publish_registry_dataset.py \
+          uv run python scripts/publish_registry_dataset.py \
             --provider gcp \
             --dataset compute \
             --dataset-dir data/gcp \
