@@ -87,5 +87,6 @@ jobs:
         run: |
           python scripts/publish_registry_dataset.py \
             --version "${{ steps.commit.outputs.commit_sha }}" \
+            --remote \
             --channel latest \
             --channel stable

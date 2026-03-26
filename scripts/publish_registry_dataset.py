@@ -77,8 +77,9 @@ def build_parser() -> argparse.ArgumentParser:
         "--wrangler-config",
         type=Path,
         help=(
-            "Path to the Wrangler config used for uploads. Defaults to "
-            "arco-registry/.wrangler/deploy.toml when present, otherwise arco-registry/wrangler.toml."
+            "Optional path to the Wrangler config used for uploads. When omitted, "
+            "the script uses a detected config when available and otherwise uploads "
+            "directly with the current Cloudflare environment."
         ),
     )
     target_group = parser.add_mutually_exclusive_group()
@@ -106,7 +107,7 @@ def sha256_file(path: Path) -> str:
     return hasher.hexdigest()
 
 
-def resolve_wrangler_config(path: Path | None) -> tuple[Path, Path]:
+def resolve_wrangler_config(path: Path | None) -> tuple[Path, Path] | None:
     if path is not None:
         config_path = path.resolve()
         if not config_path.is_file():
@@ -121,10 +122,7 @@ def resolve_wrangler_config(path: Path | None) -> tuple[Path, Path]:
     if base_config.is_file():
         return REGISTRY_DIR, base_config
 
-    raise SystemExit(
-        f"wrangler config not found under {REGISTRY_DIR}; "
-        "run `cd arco-registry && npm run config:render` or pass --wrangler-config"
-    )
+    return None
 
 
 def upload_object(
@@ -133,8 +131,8 @@ def upload_object(
     source: Path,
     *,
     remote: bool,
-    wrangler_cwd: Path,
-    wrangler_config: Path,
+    wrangler_cwd: Path | None,
+    wrangler_config: Path | None,
 ) -> None:
     command = [
         "npx",
@@ -145,9 +143,9 @@ def upload_object(
         f"{bucket}/{key}",
         "--file",
         str(source),
-        "--config",
-        str(wrangler_config),
     ]
+    if wrangler_config is not None:
+        command.extend(["--config", str(wrangler_config)])
     if remote:
         command.append("--remote")
 
@@ -182,7 +180,9 @@ def main() -> None:
     channels = tuple(dict.fromkeys(args.channels or DEFAULT_CHANNELS))
     base_url = args.base_url.rstrip("/")
     dataset_dir: Path = args.dataset_dir
-    wrangler_cwd, wrangler_config = resolve_wrangler_config(args.wrangler_config)
+    resolved_wrangler = resolve_wrangler_config(args.wrangler_config)
+    wrangler_cwd = resolved_wrangler[0] if resolved_wrangler is not None else None
+    wrangler_config = resolved_wrangler[1] if resolved_wrangler is not None else None
 
     validator = DATASET_VALIDATORS.get((provider, dataset_name))
     if validator is None:

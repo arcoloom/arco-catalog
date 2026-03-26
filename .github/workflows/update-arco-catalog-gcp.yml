@@ -90,5 +90,6 @@ jobs:
             --dataset compute \
             --dataset-dir data/gcp \
             --version "${{ steps.commit.outputs.commit_sha }}" \
+            --remote \
             --channel latest \
             --channel stable
