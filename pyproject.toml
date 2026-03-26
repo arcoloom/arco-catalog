@@ -5,6 +5,7 @@ description = "AWS EC2 instance catalog scraper and normalizer."
 readme = "README.md"
 requires-python = ">=3.14,<3.15"
 dependencies = [
+  "boto3>=1.40.0",
   "ijson>=3.4.0",
 ]
 

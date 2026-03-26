@@ -33,11 +33,6 @@ jobs:
       - name: Set up uv
         uses: astral-sh/setup-uv@v7
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v6
-        with:
-          node-version: "22"
-
       - name: Install dependencies
         run: uv sync --frozen
 
@@ -73,14 +68,15 @@ jobs:
       - name: Publish AWS dataset to registry
         if: steps.changes.outputs.changed == 'true'
         env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          S3_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY_ID }}
+          S3_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_ACCESS_KEY }}
+          S3_REGION: ${{ secrets.S3_REGION }}
+          S3_ENDPOINT: ${{ secrets.S3_ENDPOINT }}
+          S3_BUCKET: ${{ secrets.S3_BUCKET }}
           ARCO_REGISTRY_BASE_URL: https://registry.arcoloom.com
-          ARCO_REGISTRY_BUCKET: arco-registry
         run: |
           python scripts/publish_registry_dataset.py \
             --version "${{ steps.commit.outputs.commit_sha }}" \
-            --remote \
             --channel latest \
             --channel stable
 

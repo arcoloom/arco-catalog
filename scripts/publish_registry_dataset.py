@@ -5,9 +5,14 @@ import hashlib
 import json
 import mimetypes
 import os
-import subprocess
 import tempfile
 from pathlib import Path
+
+try:
+    import boto3
+    from botocore.config import Config
+except ImportError as exc:  # pragma: no cover - surfaced as a CLI error
+    raise SystemExit("boto3 is required to publish registry datasets. Install it with `pip install boto3`.") from exc
 
 if __package__ in (None, ""):
     import sys
@@ -21,8 +26,7 @@ from scripts.gcp.catalog_validation import validate_dataset_dir as validate_gcp_
 DEFAULT_BUCKET = "arco-registry"
 DEFAULT_BASE_URL = "https://registry.arcoloom.com"
 DEFAULT_CHANNELS = ("latest", "stable")
-REPO_ROOT = Path(__file__).resolve().parents[2]
-REGISTRY_DIR = REPO_ROOT / "arco-registry"
+DEFAULT_S3_REGION = "auto"
 DEFAULT_DATASET_FILES = {
     "instance_metadata": "instance_metadata.json",
     "instance_regions": "instance_regions.json",
@@ -33,6 +37,14 @@ DATASET_VALIDATORS = {
     ("aws", "ec2"): validate_aws_dataset_dir,
     ("gcp", "compute"): validate_gcp_dataset_dir,
 }
+
+
+def first_env(*names: str) -> str | None:
+    for name in names:
+        value = os.environ.get(name)
+        if value and value.strip():
+            return value.strip()
+    return None
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -58,8 +70,8 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--bucket",
-        default=os.environ.get("ARCO_REGISTRY_BUCKET", DEFAULT_BUCKET),
-        help="Registry R2 bucket name.",
+        default=first_env("S3_BUCKET") or DEFAULT_BUCKET,
+        help="S3 bucket name.",
     )
     parser.add_argument(
         "--base-url",
@@ -74,28 +86,14 @@ def build_parser() -> argparse.ArgumentParser:
         help="Channel name to update. Can be provided multiple times.",
     )
     parser.add_argument(
-        "--wrangler-config",
-        type=Path,
-        help=(
-            "Optional path to the Wrangler config used for uploads. When omitted, "
-            "the script uses a detected config when available and otherwise uploads "
-            "directly with the current Cloudflare environment."
-        ),
+        "--endpoint-url",
+        help="S3-compatible endpoint URL. Defaults to S3_ENDPOINT.",
     )
-    target_group = parser.add_mutually_exclusive_group()
-    target_group.add_argument(
-        "--remote",
-        dest="remote",
-        action="store_true",
-        help="Publish to the remote R2 bucket. This is the default.",
+    parser.add_argument(
+        "--region",
+        default=first_env("S3_REGION") or DEFAULT_S3_REGION,
+        help="S3 region name.",
     )
-    target_group.add_argument(
-        "--local",
-        dest="remote",
-        action="store_false",
-        help="Publish to Wrangler's local R2 bucket for testing.",
-    )
-    parser.set_defaults(remote=True)
     return parser
 
 
@@ -107,49 +105,41 @@ def sha256_file(path: Path) -> str:
     return hasher.hexdigest()
 
 
-def resolve_wrangler_config(path: Path | None) -> tuple[Path, Path] | None:
-    if path is not None:
-        config_path = path.resolve()
-        if not config_path.is_file():
-            raise SystemExit(f"wrangler config not found: {config_path}")
-        return config_path.parent, config_path
+def resolve_endpoint_url(explicit: str | None) -> str:
+    endpoint_url = explicit or first_env("S3_ENDPOINT")
+    if endpoint_url and endpoint_url.strip():
+        return endpoint_url.rstrip("/")
 
-    deploy_config = REGISTRY_DIR / ".wrangler" / "deploy.toml"
-    if deploy_config.is_file():
-        return REGISTRY_DIR, deploy_config
-
-    base_config = REGISTRY_DIR / "wrangler.toml"
-    if base_config.is_file():
-        return REGISTRY_DIR, base_config
-
-    return None
+    raise SystemExit(
+        "S3 endpoint not configured. Pass --endpoint-url or set "
+        "S3_ENDPOINT."
+    )
 
 
-def upload_object(
-    bucket: str,
-    key: str,
-    source: Path,
-    *,
-    remote: bool,
-    wrangler_cwd: Path | None,
-    wrangler_config: Path | None,
-) -> None:
-    command = [
-        "npx",
-        "wrangler@4",
-        "r2",
-        "object",
-        "put",
-        f"{bucket}/{key}",
-        "--file",
-        str(source),
-    ]
-    if wrangler_config is not None:
-        command.extend(["--config", str(wrangler_config)])
-    if remote:
-        command.append("--remote")
+def create_s3_client(endpoint_url: str, region: str):
+    access_key_id = first_env("S3_ACCESS_KEY_ID")
+    secret_access_key = first_env("S3_SECRET_ACCESS_KEY")
+    session_token = first_env("S3_SESSION_TOKEN")
 
-    subprocess.run(command, check=True, cwd=wrangler_cwd)
+    client_kwargs = {
+        "endpoint_url": endpoint_url,
+        "region_name": region,
+        "config": Config(
+            retries={"max_attempts": 10, "mode": "standard"},
+            s3={"addressing_style": "path"},
+        ),
+    }
+    if access_key_id:
+        client_kwargs["aws_access_key_id"] = access_key_id
+    if secret_access_key:
+        client_kwargs["aws_secret_access_key"] = secret_access_key
+    if session_token:
+        client_kwargs["aws_session_token"] = session_token
+
+    return boto3.client(
+        "s3",
+        **client_kwargs,
+    )
 
 
 def write_json_temp(payload: dict[str, object]) -> Path:
@@ -163,6 +153,17 @@ def write_json_temp(payload: dict[str, object]) -> Path:
 def content_type_for(path: Path) -> str:
     guessed, _ = mimetypes.guess_type(path.name)
     return guessed or "application/octet-stream"
+
+
+def upload_object(client, bucket: str, key: str, source: Path) -> None:
+    client.upload_file(
+        str(source),
+        bucket,
+        key,
+        ExtraArgs={
+            "ContentType": content_type_for(source),
+        },
+    )
 
 
 def main() -> None:
@@ -180,9 +181,8 @@ def main() -> None:
     channels = tuple(dict.fromkeys(args.channels or DEFAULT_CHANNELS))
     base_url = args.base_url.rstrip("/")
     dataset_dir: Path = args.dataset_dir
-    resolved_wrangler = resolve_wrangler_config(args.wrangler_config)
-    wrangler_cwd = resolved_wrangler[0] if resolved_wrangler is not None else None
-    wrangler_config = resolved_wrangler[1] if resolved_wrangler is not None else None
+    endpoint_url = resolve_endpoint_url(args.endpoint_url)
+    s3_client = create_s3_client(endpoint_url, args.region)
 
     validator = DATASET_VALIDATORS.get((provider, dataset_name))
     if validator is None:
@@ -196,14 +196,7 @@ def main() -> None:
         if not path.is_file():
             raise SystemExit(f"dataset file not found: {path}")
         key = f"datasets/{provider}/{dataset_name}/{version}/{filename}"
-        upload_object(
-            args.bucket,
-            key,
-            path,
-            remote=args.remote,
-            wrangler_cwd=wrangler_cwd,
-            wrangler_config=wrangler_config,
-        )
+        upload_object(s3_client, args.bucket, key, path)
         files[alias] = {
             "key": key,
             "filename": filename,
@@ -227,12 +220,10 @@ def main() -> None:
     version_manifest_path = write_json_temp(version_manifest)
     try:
         upload_object(
+            s3_client,
             args.bucket,
             f"manifests/versions/datasets/{provider}/{dataset_name}/{version}.json",
             version_manifest_path,
-            remote=args.remote,
-            wrangler_cwd=wrangler_cwd,
-            wrangler_config=wrangler_config,
         )
     finally:
         version_manifest_path.unlink(missing_ok=True)
@@ -256,12 +247,10 @@ def main() -> None:
         channel_manifest_path = write_json_temp(channel_manifest)
         try:
             upload_object(
+                s3_client,
                 args.bucket,
                 f"manifests/channels/datasets/{provider}/{dataset_name}/{channel}.json",
                 channel_manifest_path,
-                remote=args.remote,
-                wrangler_cwd=wrangler_cwd,
-                wrangler_config=wrangler_config,
             )
         finally:
             channel_manifest_path.unlink(missing_ok=True)
