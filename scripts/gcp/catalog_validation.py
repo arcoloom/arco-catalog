@@ -24,13 +24,11 @@ class CatalogValidationConfig:
     min_match_ratio: float = 0.80
     min_series_count: int = 15
     min_region_rows: int = 12000
-    min_priced_region_rows: int = 12000
     min_spot_region_rows: int = 12000
     max_missing_region_name_ratio: float = 0.02
     min_metadata_baseline_ratio: float = 0.80
     min_series_baseline_ratio: float = 0.80
     min_regions_baseline_ratio: float = 0.80
-    min_priced_regions_baseline_ratio: float = 0.80
 
 
 DEFAULT_VALIDATION_CONFIG = CatalogValidationConfig()
@@ -42,7 +40,6 @@ class CatalogSummary:
     matched_instances: int
     series_count: int
     region_rows: int
-    priced_region_rows: int
     spot_region_rows: int
     missing_region_name_rows: int
 
@@ -73,7 +70,6 @@ def summarize_catalog(
     instance_regions: list[dict[str, Any]],
     series_models: list[dict[str, Any]],
 ) -> CatalogSummary:
-    priced_region_rows = sum(1 for row in instance_regions if row.get("on_demand_price"))
     spot_region_rows = sum(1 for row in instance_regions if row.get("spot_price"))
     missing_region_name_rows = sum(1 for row in instance_regions if not row.get("region_name"))
     return CatalogSummary(
@@ -81,7 +77,6 @@ def summarize_catalog(
         matched_instances=len(instance_metadata),
         series_count=len(series_models),
         region_rows=len(instance_regions),
-        priced_region_rows=priced_region_rows,
         spot_region_rows=spot_region_rows,
         missing_region_name_rows=missing_region_name_rows,
     )
@@ -184,11 +179,6 @@ def _validate_summary(summary: CatalogSummary, config: CatalogValidationConfig) 
     if summary.region_rows < config.min_region_rows:
         raise ValueError(
             f"region row count {summary.region_rows} is below minimum {config.min_region_rows}"
-        )
-    if summary.priced_region_rows < config.min_priced_region_rows:
-        raise ValueError(
-            "priced region row count "
-            f"{summary.priced_region_rows} is below minimum {config.min_priced_region_rows}"
         )
     if summary.spot_region_rows < config.min_spot_region_rows:
         raise ValueError(
@@ -328,14 +318,6 @@ def _validate_against_baseline(
         baseline.region_rows,
         config.min_regions_baseline_ratio,
     )
-    _validate_floor(
-        "priced region row count",
-        summary.priced_region_rows,
-        baseline.priced_region_rows,
-        config.min_priced_regions_baseline_ratio,
-    )
-
-
 def _validate_floor(label: str, current: int, previous: int, ratio: float) -> None:
     if previous <= 0:
         return

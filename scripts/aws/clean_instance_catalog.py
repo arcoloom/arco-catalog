@@ -205,24 +205,12 @@ def build_instance_regions(instances: list[dict[str, Any]]) -> list[dict[str, An
 
         region_codes = sorted(set(regions.keys()) | set(pricing.keys()))
         for region_code in region_codes:
-            on_demand_price = None
-            region_pricing = pricing.get(region_code)
-            if isinstance(region_pricing, dict):
-                linux_pricing = region_pricing.get("linux")
-                if isinstance(linux_pricing, dict):
-                    raw_on_demand = linux_pricing.get("ondemand")
-                    if raw_on_demand is not None:
-                        value = str(raw_on_demand).strip()
-                        if value:
-                            on_demand_price = value
-
             rows.append(
                 {
                     "series": series,
                     "instance_type": instance_type,
                     "region_code": region_code,
                     "region_name": regions.get(region_code),
-                    "on_demand_price": on_demand_price,
                 }
             )
 

@@ -51,21 +51,18 @@ def build_sample_payloads() -> tuple[list[dict], list[dict], list[dict]]:
             "instance_type": "m7i.large",
             "region_code": "us-east-1",
             "region_name": "US East (N. Virginia)",
-            "on_demand_price": "0.10",
         },
         {
             "series": "m7i",
             "instance_type": "m7i.xlarge",
             "region_code": "us-east-1",
             "region_name": "US East (N. Virginia)",
-            "on_demand_price": "0.20",
         },
         {
             "series": "c7g",
             "instance_type": "c7g.large",
             "region_code": "us-west-2",
             "region_name": "US West (Oregon)",
-            "on_demand_price": "0.30",
         },
     ]
     return series_models, instance_metadata, instance_regions
@@ -79,12 +76,10 @@ class CatalogValidationTests(unittest.TestCase):
             min_match_ratio=0.9,
             min_series_count=2,
             min_region_rows=3,
-            min_priced_region_rows=3,
             max_missing_region_name_ratio=0.0,
             min_metadata_baseline_ratio=0.8,
             min_series_baseline_ratio=0.8,
             min_regions_baseline_ratio=0.8,
-            min_priced_regions_baseline_ratio=0.8,
         )
 
     def test_validate_catalog_payloads_accepts_consistent_data(self) -> None:
@@ -99,7 +94,6 @@ class CatalogValidationTests(unittest.TestCase):
 
         self.assertEqual(summary.matched_instances, 3)
         self.assertEqual(summary.region_rows, 3)
-        self.assertEqual(summary.priced_region_rows, 3)
 
     def test_validate_catalog_payloads_rejects_large_baseline_drop(self) -> None:
         series_models, instance_metadata, instance_regions = build_sample_payloads()

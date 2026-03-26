@@ -55,7 +55,6 @@ def build_sample_payloads() -> tuple[list[dict], list[dict], list[dict]]:
             "instance_type": "n2-standard-2",
             "region_code": "us-central1",
             "region_name": "Iowa",
-            "on_demand_price": "0.10",
             "spot_price": "0.02",
         },
         {
@@ -63,7 +62,6 @@ def build_sample_payloads() -> tuple[list[dict], list[dict], list[dict]]:
             "instance_type": "n2-standard-4",
             "region_code": "us-central1",
             "region_name": "Iowa",
-            "on_demand_price": "0.20",
             "spot_price": "0.04",
         },
         {
@@ -71,7 +69,6 @@ def build_sample_payloads() -> tuple[list[dict], list[dict], list[dict]]:
             "instance_type": "t2a-standard-2",
             "region_code": "europe-west1",
             "region_name": "Belgium",
-            "on_demand_price": "0.30",
             "spot_price": "0.06",
         },
     ]
@@ -86,13 +83,11 @@ class GCPCatalogValidationTests(unittest.TestCase):
             min_match_ratio=0.9,
             min_series_count=2,
             min_region_rows=3,
-            min_priced_region_rows=3,
             min_spot_region_rows=3,
             max_missing_region_name_ratio=0.0,
             min_metadata_baseline_ratio=0.8,
             min_series_baseline_ratio=0.8,
             min_regions_baseline_ratio=0.8,
-            min_priced_regions_baseline_ratio=0.8,
         )
 
     def test_validate_catalog_payloads_accepts_consistent_data(self) -> None:
@@ -151,13 +146,11 @@ class GCPCatalogValidationTests(unittest.TestCase):
                         min_match_ratio=0.5,
                         min_series_count=1,
                         min_region_rows=2,
-                        min_priced_region_rows=2,
                         min_spot_region_rows=2,
                         max_missing_region_name_ratio=0.1,
                         min_metadata_baseline_ratio=1.0,
                         min_series_baseline_ratio=0.8,
                         min_regions_baseline_ratio=0.8,
-                        min_priced_regions_baseline_ratio=0.8,
                     ),
                 )
 
