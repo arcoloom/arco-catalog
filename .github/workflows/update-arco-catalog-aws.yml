@@ -3,8 +3,8 @@ name: Update AWS Catalog Metadata
 on:
   workflow_dispatch:
   schedule:
-    # Monday 10:00 Asia/Shanghai
-    - cron: "0 2 * * 1"
+    # Friday 00:00 UTC
+    - cron: "0 0 * * 5"
 
 permissions:
   contents: write

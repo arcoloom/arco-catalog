@@ -3,8 +3,8 @@ name: Update GCP Catalog Metadata
 on:
   workflow_dispatch:
   schedule:
-    # Thursday 10:00 Asia/Shanghai
-    - cron: "0 2 * * 4"
+    # Friday 00:00 UTC
+    - cron: "0 0 * * 5"
 
 permissions:
   contents: write
